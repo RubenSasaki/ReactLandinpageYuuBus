@@ -1,20 +1,6 @@
-import { useEffect, useState } from 'react'
+import { GOOGLE_PLAY_URL } from '../data/landingContent'
 
 export function Header() {
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const update = () => setScrolled(window.scrollY > 24)
-    update()
-    window.addEventListener('scroll', update, { passive: true })
-    return () => window.removeEventListener('scroll', update)
-  }, [])
-
-  useEffect(() => {
-    document.body.classList.toggle('is-scrolled', scrolled)
-    return () => document.body.classList.remove('is-scrolled')
-  }, [scrolled])
-
   return (
     <nav className="nav" aria-label="Navegación principal">
       <div className="nav-inner">
@@ -24,10 +10,23 @@ export function Header() {
           </span>
           <span className="nav-logo-text">Yuu Bus</span>
         </a>
+
         <div className="nav-actions">
-          <a className="nav-link" href="#features">Características</a>
-          <a className="nav-link" href="#planes">Planes</a>
-          <a className="nav-link nav-download" href="#download">Descargar</a>
+          <a className="nav-link" href="#features">
+            Características
+          </a>
+          <a className="nav-link" href="#planes">
+            Planes
+          </a>
+          <a
+            className="nav-link nav-download"
+            href={GOOGLE_PLAY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Descargar Yuu Bus en Google Play"
+          >
+            Descargar
+          </a>
         </div>
       </div>
     </nav>

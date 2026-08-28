@@ -76,6 +76,11 @@ export function setMeasurementConsent(consent: Exclude<Consent, null>) {
   }
 
   if (consent === 'granted') initializeMetaPixel()
+  else window.fbq?.('consent', 'revoke')
+}
+
+export function openCookiePreferences() {
+  window.dispatchEvent(new Event('yuubus:open-cookie-preferences'))
 }
 
 export function trackConversion(

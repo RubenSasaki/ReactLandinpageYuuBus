@@ -1,38 +1,26 @@
-import { useEffect } from 'react'
+import { Footer } from '../components/Footer'
+import { PageHeader } from '../components/PageHeader'
+import { usePageMetadata } from '../hooks/usePageMetadata'
 
 export function PrivacyPage() {
-  useEffect(() => {
-    const previousTitle = document.title
-    const canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]')
-    const description = document.querySelector<HTMLMetaElement>('meta[name="description"]')
-    const previousCanonical = canonical?.href
-    const previousDescription = description?.content
-
-    document.title = 'Política de privacidad | Yuu Bus: Rutas Oaxaca'
-    canonical?.setAttribute('href', 'https://www.yuubus.com/privacy/')
-    description?.setAttribute(
-      'content',
-      'Consulta la política de privacidad de Yuu Bus: Rutas Oaxaca y el uso de datos en la aplicación.',
-    )
-
-    return () => {
-      document.title = previousTitle
-      if (canonical && previousCanonical) canonical.href = previousCanonical
-      if (description && previousDescription) description.content = previousDescription
-    }
-  }, [])
+  usePageMetadata({
+    title: 'Aviso de Privacidad | Yuu Bus: Rutas Oaxaca',
+    description: 'Consulta el Aviso de Privacidad de Yuu Bus y el uso de datos, cookies y tecnologías de medición.',
+    path: '/privacy',
+  })
 
   return (
     <div className="privacy-page">
+      <PageHeader />
       <header className="privacy-header">
         <div className="privacy-header-inner">
           <p className="privacy-eyebrow">MonteCode · Código con raíz</p>
-          <h1 id="privacy-title">Política de privacidad</h1>
+          <h1 id="privacy-title">Aviso de Privacidad</h1>
           <p className="privacy-subtitle">
             Información sobre el tratamiento de datos en Yuu Bus: Rutas Oaxaca.
           </p>
           <div className="privacy-metadata">
-            <span>Última actualización: 12 de junio de 2026</span>
+            <span>Última actualización: 28 de agosto de 2026</span>
             <span>Paquete: mx.oaxaca.rutasoaxaca</span>
           </div>
         </div>
@@ -104,51 +92,68 @@ export function PrivacyPage() {
         </ul>
         <p>El tratamiento realizado directamente por esos servicios se rige por sus respectivas políticas de privacidad.</p>
 
-        <h2>5. Datos que no solicitamos</h2>
+        <h2>5. Cookies y medición del sitio web</h2>
+        <p>
+          El sitio web de Yuu Bus guarda localmente la elección de consentimiento y puede utilizar cookies o tecnologías
+          similares de medición y publicidad únicamente cuando la persona acepta las opciones correspondientes. Estas
+          herramientas se utilizan para conocer visitas y clics de conversión, evaluar el funcionamiento del sitio y
+          mejorar campañas publicitarias.
+        </p>
+        <p>
+          Cuando se acepta la medición opcional, se puede cargar una herramienta de Meta Platforms que recibe información
+          técnica habitual, como dirección IP, navegador o dispositivo, página visitada, interacción registrada y parámetros
+          de campaña presentes en la URL. El tratamiento realizado por Meta se rige por su{' '}
+          <a href="https://www.facebook.com/privacy/policy/" rel="noopener noreferrer">política de privacidad</a>.
+          Si se rechaza, la herramienta no se carga y el sitio continúa funcionando.
+        </p>
+
+        <h2>6. Datos que no solicitamos</h2>
         <ul>
           <li>No se requiere crear una cuenta ni proporcionar contraseña.</li>
           <li>No se solicitan nombre legal, correo, teléfono ni datos de pago.</li>
-          <li>No se integran anuncios ni identificadores publicitarios.</li>
+          <li>La aplicación móvil no integra anuncios ni identificadores publicitarios.</li>
           <li>No se venden datos personales.</li>
-          <li>No se usan datos personales para publicidad o perfilado.</li>
+          <li>La aplicación móvil no usa datos personales para publicidad o perfilado.</li>
         </ul>
 
-        <h2>6. Conservación y eliminación</h2>
+        <h2>7. Conservación y eliminación</h2>
         <p>
           MonteCode no mantiene una base de datos de cuentas o ubicaciones de los usuarios. Las preferencias y cachés
           locales pueden eliminarse desde los ajustes del dispositivo al borrar los datos de la aplicación, o al
           desinstalarla.
         </p>
 
-        <h2>7. Seguridad</h2>
+        <h2>8. Seguridad</h2>
         <p>
           La aplicación limita los permisos a los necesarios para sus funciones y utiliza conexiones HTTPS para solicitar
           contenido remoto. Ningún método de transmisión o almacenamiento es infalible, pero se aplican medidas razonables
           para reducir el acceso o uso no autorizado.
         </p>
 
-        <h2>8. Menores de edad</h2>
+        <h2>9. Menores de edad</h2>
         <p>
           Yuu Bus es una herramienta general de movilidad y turismo. No está dirigida específicamente a menores de 13 años
           y no recopila intencionalmente información personal de niñas o niños.
         </p>
 
-        <h2>9. Cambios en esta política</h2>
+        <h2>10. Cambios en este aviso</h2>
         <p>
           Esta política puede actualizarse cuando cambien las funciones, los proveedores o los requisitos legales. La fecha
           de la versión vigente se mostrará al inicio de esta página.
         </p>
 
-        <h2>10. Contacto</h2>
+        <h2>11. Contacto</h2>
         <p>
           Para preguntas sobre privacidad o el funcionamiento de la aplicación:{' '}
           <a href="mailto:rubengioreyes@outlook.com">rubengioreyes@outlook.com</a>.
         </p>
+        <aside className="legal-review" role="note">
+          <strong>REQUIERE REVISIÓN LEGAL:</strong> confirmar la identidad legal completa del responsable, domicilio para
+          ejercer derechos, fundamento y plazos de conservación aplicables al sitio web, y requisitos de transferencias
+          internacionales derivados de las herramientas de terceros.
+        </aside>
       </main>
-
-      <footer className="privacy-footer">
-        © 2026 MonteCode. Yuu Bus es una aplicación comunitaria no oficial de movilidad y turismo de Oaxaca.
-      </footer>
+      <Footer />
     </div>
   )
 }

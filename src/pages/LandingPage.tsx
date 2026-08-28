@@ -1,5 +1,3 @@
-import { useEffect } from 'react'
-import { AnalyticsConsent } from '../components/AnalyticsConsent'
 import { DiscoverySection } from '../components/DiscoverySection'
 import { FeatureExplorer } from '../components/FeatureExplorer'
 import { FinalCTA } from '../components/FinalCTA'
@@ -11,11 +9,8 @@ import { MobileStickyCTA } from '../components/MobileStickyCTA'
 import { ProblemSection } from '../components/ProblemSection'
 import { RouteDivider } from '../components/BrandMotifs'
 import { Stats } from '../components/Stats'
-import { initializeMetaPixel } from '../lib/analytics'
 
 export function LandingPage() {
-  useEffect(() => initializeMetaPixel(), [])
-
   return (
     <>
       <Header />
@@ -31,7 +26,6 @@ export function LandingPage() {
         <FinalCTA />
       </main>
       <Footer />
-      <AnalyticsConsent />
       <MobileStickyCTA />
     </>
   )

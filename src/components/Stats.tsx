@@ -9,6 +9,10 @@ export function Stats() {
           <div className="stat-label">{stat.label}</div>
         </div>
       ))}
+      <p className="stats-trust">
+        <span className="material-symbols-rounded" aria-hidden="true">route</span>
+        Hecho para moverse por Oaxaca.
+      </p>
     </div>
   )
 }

@@ -8,6 +8,12 @@ export function HowItWorks() {
         <h2 className="section-title" id="how-title">De tu destino a una ruta, en tres pasos.</h2>
       </header>
 
+      <div className="how-journey" aria-hidden="true">
+        <span className="how-journey-node is-first">BUSCA</span>
+        <span className="how-journey-node">ELIGE</span>
+        <span className="how-journey-node">LLEGA</span>
+      </div>
+
       <div className="how-grid">
         {howItWorks.map((item) => (
           <article className="how-card" key={item.step}>

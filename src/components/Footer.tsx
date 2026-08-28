@@ -3,9 +3,11 @@ import { SPONSOR_CONTACT_EMAIL } from '../data/landingContent'
 export function Footer() {
   return (
     <footer>
+      <div className="footer-greca" aria-hidden="true" />
       <img className="footer-logo" src="/yuubus-icon-192.png" alt="Icono oficial de Yuu Bus" width="192" height="192" loading="lazy" />
       <strong className="footer-brand">Yuu Bus: Rutas Oaxaca</strong>
       <span className="footer-studio">Un producto de MonteCode</span>
+      <strong className="footer-trust">Hecho para moverse por Oaxaca.</strong>
       <nav className="footer-links" aria-label="Enlaces del pie de página">
         <a href="#rutas">Rutas</a>
         <a href="#features">Características</a>

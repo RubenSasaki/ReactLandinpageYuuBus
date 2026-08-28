@@ -1,8 +1,10 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { GOOGLE_PLAY_URL, withCampaignParameters } from '../data/landingContent'
 import { trackConversion } from '../lib/analytics'
 
 export function Header() {
+  const [activeSection, setActiveSection] = useState('inicio')
+
   useEffect(() => {
     const updateHeader = () => document.body.classList.toggle('is-scrolled', window.scrollY > 24)
     updateHeader()
@@ -11,6 +13,27 @@ export function Header() {
       window.removeEventListener('scroll', updateHeader)
       document.body.classList.remove('is-scrolled')
     }
+  }, [])
+
+  useEffect(() => {
+    const sections = ['inicio', 'rutas', 'features', 'oaxaca']
+      .map((id) => document.getElementById(id))
+      .filter((section): section is HTMLElement => Boolean(section))
+
+    if (!('IntersectionObserver' in window)) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0]
+        if (visible?.target.id) setActiveSection(visible.target.id)
+      },
+      { rootMargin: '-24% 0px -62% 0px', threshold: [0, 0.15, 0.5] },
+    )
+
+    sections.forEach((section) => observer.observe(section))
+    return () => observer.disconnect()
   }, [])
 
   return (
@@ -24,13 +47,13 @@ export function Header() {
         </a>
 
         <div className="nav-actions">
-          <a className="nav-link" href="#rutas">
+          <a className={`nav-link${activeSection === 'rutas' ? ' is-active' : ''}`} href="#rutas" aria-current={activeSection === 'rutas' ? 'location' : undefined}>
             Rutas
           </a>
-          <a className="nav-link" href="#features">
+          <a className={`nav-link${activeSection === 'features' ? ' is-active' : ''}`} href="#features" aria-current={activeSection === 'features' ? 'location' : undefined}>
             Características
           </a>
-          <a className="nav-link" href="#oaxaca">
+          <a className={`nav-link${activeSection === 'oaxaca' ? ' is-active' : ''}`} href="#oaxaca" aria-current={activeSection === 'oaxaca' ? 'location' : undefined}>
             Oaxaca
           </a>
           <a className="nav-link" href="/privacy/">

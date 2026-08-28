@@ -3,6 +3,7 @@ import { GOOGLE_PLAY_URL, withCampaignParameters } from '../data/landingContent'
 import { usePointerTilt } from '../hooks/usePointerTilt'
 import { trackConversion } from '../lib/analytics'
 import { AppShowcase } from './AppShowcase'
+import { HeroRouteMap } from './BrandMotifs'
 
 export function Hero() {
   const { tilt, onPointerMove, onPointerLeave } = usePointerTilt(3)
@@ -11,6 +12,7 @@ export function Hero() {
   return (
     <section className="hero" id="inicio">
       <div className="hero-depth" aria-hidden="true" />
+      <HeroRouteMap />
       <div className="hero-content">
         <div className="hero-copy">
           <div className="hero-badge">

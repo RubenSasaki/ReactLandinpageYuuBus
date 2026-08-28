@@ -2,6 +2,7 @@ import type { CSSProperties } from 'react'
 import { GOOGLE_PLAY_URL, withCampaignParameters } from '../data/landingContent'
 import { usePointerTilt } from '../hooks/usePointerTilt'
 import { trackConversion } from '../lib/analytics'
+import { YuuBusCorner } from './BrandMotifs'
 
 export function FinalCTA() {
   const { tilt, onPointerMove, onPointerLeave } = usePointerTilt(2.4)
@@ -9,6 +10,7 @@ export function FinalCTA() {
 
   return (
     <section className="final-cta" aria-labelledby="final-cta-title">
+      <YuuBusCorner />
       <div className="final-cta-copy">
         <p className="section-tag">Yuu Bus: Rutas Oaxaca</p>
         <h2 id="final-cta-title">Tu siguiente ruta empieza aquí.</h2>

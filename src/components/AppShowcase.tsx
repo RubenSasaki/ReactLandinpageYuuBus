@@ -7,9 +7,11 @@ export function AppShowcase() {
   const tabRefs = useRef<Array<HTMLButtonElement | null>>([])
   const { tilt, onPointerMove, onPointerLeave } = usePointerTilt(2.5)
 
+  const featuredScreens = showcaseScreens.slice(0, 4)
+
   const classFor = (index: number) => {
-    const previous = (active - 1 + showcaseScreens.length) % showcaseScreens.length
-    const next = (active + 1) % showcaseScreens.length
+    const previous = (active - 1 + featuredScreens.length) % featuredScreens.length
+    const next = (active + 1) % featuredScreens.length
 
     if (index === active) return 'phone-screen is-active'
     if (index === previous) return 'phone-screen is-prev'
@@ -24,8 +26,8 @@ export function AppShowcase() {
 
   const onTabKeyDown = (event: KeyboardEvent<HTMLButtonElement>, index: number) => {
     let next: number
-    if (event.key === 'ArrowRight') next = (index + 1) % showcaseScreens.length
-    else if (event.key === 'ArrowLeft') next = (index - 1 + showcaseScreens.length) % showcaseScreens.length
+    if (event.key === 'ArrowRight') next = (index + 1) % featuredScreens.length
+    else if (event.key === 'ArrowLeft') next = (index - 1 + featuredScreens.length) % featuredScreens.length
     else if (event.key === 'Home') next = 0
     else if (event.key === 'End') next = showcaseScreens.length - 1
     else return
@@ -46,10 +48,12 @@ export function AppShowcase() {
           '--showcase-ry': `${tilt.y}deg`,
         } as CSSProperties}
       >
-        {showcaseScreens.map((screen, index) => (
+        {featuredScreens.map((screen, index) => (
           <figure
             className={classFor(index)}
             id={`showcase-screen-${index}`}
+            role="tabpanel"
+            aria-labelledby={`showcase-tab-${index}`}
             aria-hidden={index !== active}
             key={screen.src}
           >
@@ -65,12 +69,13 @@ export function AppShowcase() {
         ))}
       </div>
       <div className="showcase-controls" role="tablist" aria-label="Explorar Yuu Bus">
-        {showcaseScreens.map((screen, index) => (
+        {featuredScreens.map((screen, index) => (
           <button
             ref={(element) => { tabRefs.current[index] = element }}
             className={`showcase-control${index === active ? ' is-active' : ''}`}
             type="button"
             role="tab"
+            id={`showcase-tab-${index}`}
             aria-selected={index === active}
             aria-controls={`showcase-screen-${index}`}
             tabIndex={index === active ? 0 : -1}

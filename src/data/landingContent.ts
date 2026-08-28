@@ -1,6 +1,20 @@
 export const GOOGLE_PLAY_URL =
   'https://play.google.com/store/apps/details?id=mx.oaxaca.rutasoaxaca'
 
+export function withCampaignParameters(url: string) {
+  if (typeof window === 'undefined') return url
+
+  const destination = new URL(url)
+  const current = new URLSearchParams(window.location.search)
+
+  for (const key of ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content']) {
+    const value = current.get(key)
+    if (value) destination.searchParams.set(key, value)
+  }
+
+  return destination.toString()
+}
+
 export const showcaseScreens = [
   {
     src: '/assets/screens/inicio.webp',
@@ -53,10 +67,42 @@ export const showcaseScreens = [
   },
 ] as const
 
+export const howItWorks = [
+  {
+    step: '01',
+    icon: 'search',
+    title: 'Busca tu destino',
+    description: 'Escribe a dónde vas o elige el punto directamente en el mapa.',
+    image: '/assets/screens/planear-viaje-inicio.webp',
+    alt: 'Pantalla de Yuu Bus para elegir origen y destino',
+    width: 944,
+    height: 2048,
+  },
+  {
+    step: '02',
+    icon: 'route',
+    title: 'Elige una ruta',
+    description: 'Compara viaje directo, transbordo o caminata antes de salir.',
+    image: '/assets/screens/opciones-viaje.webp',
+    alt: 'Opciones de viaje directas y con transbordo en Yuu Bus',
+    width: 944,
+    height: 2048,
+  },
+  {
+    step: '03',
+    icon: 'near_me',
+    title: 'Mira cómo llegar',
+    description: 'Consulta el recorrido y las paradas para moverte con más claridad.',
+    image: '/assets/screens/seguir-ruta.webp',
+    alt: 'Seguimiento de una ruta y sus paradas en el mapa de Yuu Bus',
+    width: 944,
+    height: 2048,
+  },
+] as const
+
 export const stats = [
   { value: '16+', label: 'Rutas capturadas' },
   { value: '1,400+', label: 'Paradas mapeadas' },
-  { value: 'OAX', label: 'Oaxaca de Juárez' },
 ] as const
 
 export const features = [

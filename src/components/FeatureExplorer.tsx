@@ -25,10 +25,15 @@ export function FeatureExplorer() {
 
   return (
     <section className="section" id="features">
-      <p className="section-tag">¿Qué es Yuu Bus?</p>
-      <h2 className="section-title">Una app hecha por<br />Oaxaca, para Oaxaca.</h2>
+      <p className="section-tag">Características reales</p>
+      <h2 className="section-title">Lo necesario para moverte con más claridad.</h2>
       <div className="feature-experience">
-        <div className="feature-preview" id="feature-preview" aria-live="polite">
+        <div
+          className="feature-preview"
+          id="feature-preview"
+          role="tabpanel"
+          aria-labelledby={`feature-tab-${active}`}
+        >
           <div className="feature-device">
             <img
               src={selected.image}
@@ -47,6 +52,7 @@ export function FeatureExplorer() {
               className={`feature-card${index === active ? ' is-active' : ''}`}
               type="button"
               role="tab"
+              id={`feature-tab-${index}`}
               aria-selected={index === active}
               aria-controls="feature-preview"
               tabIndex={index === active ? 0 : -1}

@@ -3,10 +3,22 @@ import { useEffect } from 'react'
 export function PrivacyPage() {
   useEffect(() => {
     const previousTitle = document.title
+    const canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]')
+    const description = document.querySelector<HTMLMetaElement>('meta[name="description"]')
+    const previousCanonical = canonical?.href
+    const previousDescription = description?.content
+
     document.title = 'Política de privacidad | Yuu Bus: Rutas Oaxaca'
+    canonical?.setAttribute('href', 'https://www.yuubus.com/privacy/')
+    description?.setAttribute(
+      'content',
+      'Consulta la política de privacidad de Yuu Bus: Rutas Oaxaca y el uso de datos en la aplicación.',
+    )
 
     return () => {
       document.title = previousTitle
+      if (canonical && previousCanonical) canonical.href = previousCanonical
+      if (description && previousDescription) description.content = previousDescription
     }
   }, [])
 

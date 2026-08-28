@@ -2,14 +2,14 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [
         {
           "type": "host",
           "value": "yuubus.com"
         }
       ],
-      "destination": "https://www.yuubus.com/:path*",
+      "destination": "https://www.yuubus.com/$1",
       "permanent": true
     }
   ],

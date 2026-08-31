@@ -116,7 +116,7 @@ function validateRouteDocument(document, entry) {
     if (typeof stop.lat !== 'number' || typeof stop.lng !== 'number' || stop.lat < -90 || stop.lat > 90 || stop.lng < -180 || stop.lng > 180) {
       fail(`${entry.id}.paradas[${index}] contiene coordenadas inválidas`)
     }
-    return { id, name: stopName }
+    return { id, name: stopName, lat: stop.lat, lng: stop.lng }
   })
   if (!Array.isArray(document.trayecto) || document.trayecto.length < 2) fail(`${entry.id}.trayecto debe contener al menos dos puntos`)
   const pathPoints = document.trayecto.map((point, index) => validatePoint(point, `${entry.id}.trayecto[${index}]`))
@@ -230,15 +230,15 @@ function jsonLd(value) {
 }
 
 function staticHeader() {
-  return `<header class="page-header"><div class="page-header-inner"><a class="page-brand" href="/" aria-label="Yuu Bus — inicio"><img src="/yuubus-icon-192.png" alt="" width="38" height="38"><span>Yuu Bus</span></a><nav class="route-page-nav" aria-label="Navegación"><a href="/rutas/">Rutas</a><a href="/anunciate/">Anúnciate</a><a href="/">Inicio</a></nav></div></header>`
+  return `<header class="page-header"><div class="page-header-inner"><a class="page-brand" href="/" aria-label="Yuu Bus — inicio"><img src="/yuubus-icon-192.png" alt="" width="38" height="38"><span>Yuu Bus</span></a><nav class="route-page-nav" aria-label="Navegación"><a class="route-page-primary" href="/rutas/">Rutas</a><a class="route-page-primary" href="/anunciate/">Anúnciate</a><details class="nav-more"><summary>Más</summary><nav class="nav-more-menu" aria-label="Navegación secundaria"><a class="nav-more-mobile-primary" href="/rutas/">Rutas</a><a class="nav-more-mobile-primary" href="/anunciate/">Anúnciate</a><a href="/colabora/">Colabora</a><a href="/privacy/">Aviso de Privacidad</a><a href="/terminos/">Términos y Condiciones</a></nav></details><a href="/">Inicio</a></nav></div></header>`
 }
 
 function staticFooter() {
   return `<footer><div class="footer-greca" aria-hidden="true"></div><img class="footer-logo" src="/yuubus-icon-192.png" alt="Icono oficial de Yuu Bus" width="192" height="192" loading="lazy"><strong class="footer-brand">Yuu Bus: Rutas Oaxaca</strong><span class="footer-studio">Un producto de MonteCode</span><strong class="footer-trust">Hecho para moverse por Oaxaca.</strong><nav class="footer-links" aria-label="Enlaces del pie de página"><a href="/rutas/">Rutas</a><a href="/anunciate/">Anúnciate</a><a href="/colabora/">Colabora</a><a href="/privacy/">Aviso de Privacidad</a><a href="/terminos/">Términos y Condiciones</a></nav><p>Hecha por Equipo Yuu Bus · Oaxaca de Juárez, México<br>App no oficial. Datos capturados por la comunidad.<br>Contacto: <a href="mailto:montealbancode@gmail.com">montealbancode@gmail.com</a></p><button class="footer-cookie-button" type="button" data-cookie-preferences>Preferencias de cookies</button></footer>`
 }
 
-function documentHtml({ title, description, canonical, bodyClass, routeId, content, structuredData, assetTags, extraScript = '' }) {
-  return `<!doctype html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="index, follow, max-image-preview:large"><meta property="og:title" content="${escapeHtml(title)}"><meta property="og:description" content="${escapeHtml(description)}"><meta property="og:type" content="website"><meta property="og:url" content="${canonical}"><meta property="og:site_name" content="YuuBus"><meta property="og:locale" content="es_MX"><meta property="og:image" content="${SITE_ORIGIN}/og-yuubus.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHtml(title)}"><meta name="twitter:description" content="${escapeHtml(description)}"><meta name="twitter:image" content="${SITE_ORIGIN}/og-yuubus.png"><link rel="canonical" href="${canonical}"><meta name="theme-color" content="#352078"><link rel="icon" type="image/png" href="/yuubus-icon-192.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">${assetTags.styles}<script type="application/ld+json">${jsonLd(structuredData)}</script></head><body data-yuubus-static-page="${bodyClass}"${routeId ? ` data-route-id="${escapeHtml(routeId)}"` : ''}>${content}<div id="root"></div>${assetTags.scripts}${extraScript}</body></html>`
+function documentHtml({ title, description, canonical, bodyClass, routeId, content, structuredData, assetTags, extraHead = '', extraScript = '' }) {
+  return `<!doctype html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="index, follow, max-image-preview:large"><meta property="og:title" content="${escapeHtml(title)}"><meta property="og:description" content="${escapeHtml(description)}"><meta property="og:type" content="website"><meta property="og:url" content="${canonical}"><meta property="og:site_name" content="YuuBus"><meta property="og:locale" content="es_MX"><meta property="og:image" content="${SITE_ORIGIN}/og-yuubus.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHtml(title)}"><meta name="twitter:description" content="${escapeHtml(description)}"><meta name="twitter:image" content="${SITE_ORIGIN}/og-yuubus.png"><link rel="canonical" href="${canonical}"><meta name="theme-color" content="#352078"><link rel="icon" type="image/png" href="/yuubus-icon-192.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">${assetTags.styles}${extraHead}<script type="application/ld+json">${jsonLd(structuredData)}</script></head><body data-yuubus-static-page="${bodyClass}"${routeId ? ` data-route-id="${escapeHtml(routeId)}"` : ''}>${content}<div id="root"></div>${assetTags.scripts}${extraScript}</body></html>`
 }
 
 function routeDiagram(route) {
@@ -299,14 +299,16 @@ function routeListPage(feed, assetTags) {
   })
 }
 
-function routeDetailPage(route, assetTags) {
+function routeDetailPage(route, assetTags, routeMapAssetTags) {
   const title = `${route.id} en Oaxaca — Recorrido y paradas | YuuBus`
   const description = `Consulta el recorrido y las ${route.stopCount} paradas registradas de la ruta ${route.id}, de ${route.origin} a ${route.destination}, en YuuBus.`
   const canonical = `${SITE_ORIGIN}/rutas/${route.slug}/`
   const outbound = route.stops.filter((stop) => !stop.id.includes('_REG_'))
   const returning = route.stops.filter((stop) => stop.id.includes('_REG_'))
   const stopList = (titleText, items) => items.length === 0 ? '' : `<section class="route-stops-group"><h2>${escapeHtml(titleText)}</h2><ol>${items.map((stop) => `<li>${escapeHtml(stop.name)}</li>`).join('')}</ol></section>`
-  const content = `${staticHeader()}<main class="route-detail-page" style="--route-color:${route.color}"><nav class="route-breadcrumb" aria-label="Ruta de navegación"><a href="/">Inicio</a><span>/</span><a href="/rutas/">Rutas</a><span>/</span><span aria-current="page">${escapeHtml(route.id)}</span></nav><header class="route-detail-hero"><div><span class="route-detail-code">${escapeHtml(route.id)}</span><span class="web-route-status">Activa</span></div><h1>${escapeHtml(route.origin)} <span aria-hidden="true">→</span> ${escapeHtml(route.destination)}</h1><p>${escapeHtml(route.name)}</p></header><section class="route-fact" aria-label="Resumen de ruta"><p>La ruta ${escapeHtml(route.id)} conecta ${escapeHtml(route.origin)} con ${escapeHtml(route.destination)} y cuenta con ${route.stopCount} paradas registradas en YuuBus.</p></section><section class="route-map-section" aria-labelledby="route-map-title"><div><p class="section-tag">RECORRIDO</p><h2 id="route-map-title">Mapa de la ruta ${escapeHtml(route.id)}</h2><p>Vista esquemática basada en el trayecto registrado. Consulta la app para explorar el mapa con mayor detalle.</p></div>${routeDiagram(route)}</section><section class="route-stops" aria-labelledby="route-stops-title"><p class="section-tag">PARADAS</p><h2 id="route-stops-title">Paradas de ${escapeHtml(route.id)}</h2><div class="route-stops-grid">${stopList('Recorrido de ida', outbound)}${stopList('Recorrido de regreso', returning)}</div></section><section class="route-download"><div><p class="section-tag">MUÉVETE CON YUUBUS</p><h2>Consulta esta ruta desde tu teléfono</h2><p>Descarga YuuBus para explorar rutas, paradas y opciones de viaje en Oaxaca.</p></div><a href="https://play.google.com/store/apps/details?id=mx.oaxaca.rutasoaxaca" target="_blank" rel="noopener noreferrer">Abrir / Descargar YuuBus</a></section></main>${staticFooter()}`
+  const mapData = { id: route.id, origin: route.origin, destination: route.destination, color: route.color, path: route.path, stops: route.stops }
+  const interactiveMap = `<div class="route-map-stage" data-route-map><div class="route-map-fallback">${routeDiagram(route)}</div><div class="route-map-interactive" data-route-map-canvas aria-label="Mapa interactivo de la ruta ${escapeHtml(route.id)}"></div><p class="sr-only" data-route-map-status aria-live="polite">Se muestra el recorrido esquemático.</p></div><script type="application/json" data-route-map-data>${jsonLd(mapData)}</script>`
+  const content = `${staticHeader()}<main class="route-detail-page" style="--route-color:${route.color}"><nav class="route-breadcrumb" aria-label="Ruta de navegación"><a href="/">Inicio</a><span>/</span><a href="/rutas/">Rutas</a><span>/</span><span aria-current="page">${escapeHtml(route.id)}</span></nav><header class="route-detail-hero"><div><span class="route-detail-code">${escapeHtml(route.id)}</span><span class="web-route-status">Activa</span></div><h1>${escapeHtml(route.origin)} <span aria-hidden="true">→</span> ${escapeHtml(route.destination)}</h1><p>${escapeHtml(route.name)}</p></header><section class="route-fact" aria-label="Resumen de ruta"><p>La ruta ${escapeHtml(route.id)} conecta ${escapeHtml(route.origin)} con ${escapeHtml(route.destination)} y cuenta con ${route.stopCount} paradas registradas en YuuBus.</p></section><section class="route-map-section" aria-labelledby="route-map-title"><div><p class="section-tag">RECORRIDO</p><h2 id="route-map-title">Mapa de la ruta ${escapeHtml(route.id)}</h2><p>Recorrido basado en el trayecto registrado. Consulta la app para explorar el mapa con mayor detalle.</p></div>${interactiveMap}</section><section class="route-stops" aria-labelledby="route-stops-title"><p class="section-tag">PARADAS</p><h2 id="route-stops-title">Paradas de ${escapeHtml(route.id)}</h2><div class="route-stops-grid">${stopList('Recorrido de ida', outbound)}${stopList('Recorrido de regreso', returning)}</div></section><section class="route-download"><div><p class="section-tag">MUÉVETE CON YUUBUS</p><h2>Consulta esta ruta desde tu teléfono</h2><p>Descarga YuuBus para explorar rutas, paradas y opciones de viaje en Oaxaca.</p></div><a href="https://play.google.com/store/apps/details?id=mx.oaxaca.rutasoaxaca" target="_blank" rel="noopener noreferrer">Abrir / Descargar YuuBus</a></section></main>${staticFooter()}`
   return documentHtml({
     title,
     description,
@@ -315,6 +317,8 @@ function routeDetailPage(route, assetTags) {
     routeId: route.id,
     content,
     assetTags,
+    extraHead: routeMapAssetTags.styles,
+    extraScript: routeMapAssetTags.scripts,
     structuredData: {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
@@ -342,6 +346,15 @@ async function render() {
   const scripts = [...indexHtml.matchAll(/<script[^>]+type="module"[^>]*><\/script>/g)].map((match) => match[0]).join('')
   if (!styles || !scripts) throw new Error('No se encontraron assets compilados de Vite para las páginas estáticas.')
   const assetTags = { styles, scripts }
+  const manifest = JSON.parse(await readFile(path.join(DIST_DIR, '.vite', 'manifest.json'), 'utf8'))
+  const routeMapEntry = manifest['src/route-map-entry.ts']
+  if (!routeMapEntry?.file || routeMapEntry.isEntry !== true) {
+    throw new Error('No se encontró la entrada compilada exclusiva para MapLibre.')
+  }
+  const routeMapAssetTags = {
+    styles: (routeMapEntry.css ?? []).map((file) => `<link rel="stylesheet" href="/${file}">`).join(''),
+    scripts: `<script type="module" src="/${routeMapEntry.file}"></script>`,
+  }
 
   await mkdir(path.join(DIST_DIR, 'rutas'), { recursive: true })
   await writeFile(path.join(DIST_DIR, 'rutas', 'index.html'), routeListPage(feed, assetTags))
@@ -349,7 +362,7 @@ async function render() {
   for (const route of feed.routes) {
     const routeDirectory = path.join(DIST_DIR, 'rutas', route.slug)
     await mkdir(routeDirectory, { recursive: true })
-    await writeFile(path.join(routeDirectory, 'index.html'), routeDetailPage(route, assetTags))
+    await writeFile(path.join(routeDirectory, 'index.html'), routeDetailPage(route, assetTags, routeMapAssetTags))
   }
   await writeFile(path.join(DIST_DIR, 'sitemap.xml'), sitemap(feed))
   console.log(`Páginas estáticas generadas: /rutas/ + ${feed.routes.length} detalles; sitemap con ${feed.routes.length + 6} URLs.`)

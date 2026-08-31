@@ -1,5 +1,6 @@
 import { commercialPlans, contactMailto } from '../data/siteContent'
 import { trackSiteEvent } from '../lib/analytics'
+import { PlanCheckIcon, PlanMailIcon } from './PlanIcons'
 
 export function SponsorPlans() {
   return (
@@ -27,7 +28,7 @@ export function SponsorPlans() {
                   <ul className="sponsor-benefits">
                     {plan.benefits.map((benefit) => (
                       <li key={benefit}>
-                        <span className="material-symbols-rounded" aria-hidden="true">check_circle</span>
+                        <PlanCheckIcon className="plan-inline-icon plan-inline-icon--check" />
                         <span>{benefit}</span>
                       </li>
                     ))}
@@ -47,7 +48,7 @@ export function SponsorPlans() {
                   )}
                   onClick={() => trackSiteEvent('business_plan_selected', { plan: plan.id, placement: 'anunciate' })}
                 >
-                  <span className="material-symbols-rounded" aria-hidden="true">mail</span>
+                  <PlanMailIcon className="plan-inline-icon plan-inline-icon--mail" />
                   Quiero este plan
                 </a>
               </article>

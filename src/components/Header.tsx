@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { GOOGLE_PLAY_URL, withCampaignParameters } from '../data/landingContent'
 import { trackConversion } from '../lib/analytics'
+import { SecondaryNavigation } from './SecondaryNavigation'
 
 export function Header() {
   const [activeSection, setActiveSection] = useState('inicio')
@@ -56,6 +57,7 @@ export function Header() {
           <a className={`nav-link nav-optional${activeSection === 'oaxaca' ? ' is-active' : ''}`} href="#oaxaca" aria-current={activeSection === 'oaxaca' ? 'location' : undefined}>
             Oaxaca
           </a>
+          <SecondaryNavigation />
           <a
             className="nav-link nav-download"
             href={withCampaignParameters(GOOGLE_PLAY_URL)}

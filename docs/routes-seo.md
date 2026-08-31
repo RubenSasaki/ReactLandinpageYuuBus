@@ -19,6 +19,16 @@ Cuando el feed es válido, el build genera dentro de `dist/`:
 Los slugs se derivan del identificador canónico (`RT01` → `rt-01`) y no del
 nombre mutable. Ningún token se entrega al navegador.
 
+## Inicio y destino del mapa
+
+Cuando una ruta contiene ida y regreso, el marker de inicio usa la primera
+parada que no tenga el segmento `_REG_` y el marker de destino usa la última
+parada de ese mismo grupo de ida. Sus etiquetas conservan los nombres reales
+de esas paradas. Si un documento publicado no contiene esa estructura, el
+orden de fallback es: primera/última parada disponible y, únicamente si tampoco
+existen paradas, primer/último vértice del trayecto. El build nunca separa ni
+corrige geometría por inferencia.
+
 ## Rebuild automático pendiente
 
 Vercel ya recompila cuando cambia este repositorio. Falta configurar, en el

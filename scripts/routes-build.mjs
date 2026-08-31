@@ -8,6 +8,7 @@ const INDEX_URL = process.env.ROUTES_FEED_INDEX_URL
 const ROUTE_BASE_URL = process.env.ROUTES_FEED_BASE_URL
   ?? 'https://raw.githubusercontent.com/RubenSasaki/rutas_oaxaca-feed/main/rutas/'
 const CACHE_FILE = path.resolve('.route-build-cache/routes.json')
+const ROUTE_STATS_FILE = path.resolve('src/data/routeStats.generated.ts')
 const DIST_DIR = path.resolve('dist')
 const FEATURED_ROUTE_IDS = ['RC03', 'RA08', 'GE21', 'RT01']
 const ROUTE_ID_PATTERN = /^[A-Z][A-Z0-9]{1,15}$/
@@ -203,6 +204,8 @@ async function prepare() {
   const preview = featured.slice(0, 4).map(({ id, slug, name, origin, destination, stopCount, color }) => ({
     id, slug, name, origin, destination, stopCount, color,
   }))
+  const publicRouteCount = routes.length
+  const publicStopCount = routes.reduce((total, route) => total + route.stopCount, 0)
 
   await mkdir(path.dirname(CACHE_FILE), { recursive: true })
   await writeFile(CACHE_FILE, `${JSON.stringify({
@@ -212,8 +215,8 @@ async function prepare() {
     routes,
     preview,
   })}\n`)
-  const stopCount = routes.reduce((total, route) => total + route.stopCount, 0)
-  console.log(`Feed de rutas validado: ${routes.length} rutas públicas y ${stopCount} paradas.`)
+  await writeFile(ROUTE_STATS_FILE, `// Generado por scripts/routes-build.mjs a partir del feed validado.\nexport const routeStats = {\n  routes: ${publicRouteCount},\n  stops: ${publicStopCount},\n} as const\n`)
+  console.log(`Feed de rutas validado: ${publicRouteCount} rutas públicas y ${publicStopCount} paradas.`)
 }
 
 function escapeHtml(value) {

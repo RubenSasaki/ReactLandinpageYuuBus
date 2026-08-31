@@ -100,11 +100,6 @@ export const howItWorks = [
   },
 ] as const
 
-export const stats = [
-  { value: '16+', label: 'Rutas capturadas' },
-  { value: '1,400+', label: 'Paradas mapeadas' },
-] as const
-
 export const features = [
   {
     icon: 'route',

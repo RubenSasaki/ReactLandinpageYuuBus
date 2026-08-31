@@ -1,4 +1,9 @@
-import { stats } from '../data/landingContent'
+import { routeStats } from '../data/routeStats.generated'
+
+const stats = [
+  { value: routeStats.routes.toLocaleString('es-MX'), label: 'Rutas disponibles' },
+  { value: routeStats.stops.toLocaleString('es-MX'), label: 'Paradas registradas' },
+] as const
 
 export function Stats() {
   return (

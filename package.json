@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "routes:prepare": "node scripts/routes-build.mjs prepare",
+    "build": "npm run routes:prepare && tsc -b && vite build && node scripts/routes-build.mjs render",
     "lint": "eslint .",
     "preview": "vite preview"
   },

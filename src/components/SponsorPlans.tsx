@@ -1,4 +1,5 @@
 import { commercialPlans, contactMailto } from '../data/siteContent'
+import { trackSiteEvent } from '../lib/analytics'
 
 export function SponsorPlans() {
   return (
@@ -10,25 +11,49 @@ export function SponsorPlans() {
         </header>
 
         <div className="sponsor-grid">
-          {commercialPlans.map((plan) => (
-            <article className={`sponsor-card sponsor-card--${plan.tone}`} key={plan.id}>
-              <div className="sponsor-card-header">
-                <h3>{plan.name}</h3>
-                <p className="sponsor-price">{plan.price}</p>
-              </div>
-            </article>
-          ))}
+          {commercialPlans.map((plan, index) => {
+            const planNumber = String(index + 1).padStart(2, '0')
+            return (
+              <article className={`sponsor-card sponsor-card--${plan.tone}`} key={plan.id}>
+                <div className="sponsor-card-header">
+                  <span className="sponsor-plan-chip">PLAN {planNumber}</span>
+                  <h3>{plan.name}</h3>
+                  <p className="sponsor-price">{plan.price}</p>
+                  <span className="sponsor-billing">{plan.billing}</span>
+                </div>
+
+                <div className="sponsor-card-body">
+                  <strong className="sponsor-includes">{plan.includesLabel}</strong>
+                  <ul className="sponsor-benefits">
+                    {plan.benefits.map((benefit) => (
+                      <li key={benefit}>
+                        <span className="material-symbols-rounded" aria-hidden="true">check_circle</span>
+                        <span>{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="sponsor-ideal">
+                  <strong>Ideal para</strong>
+                  <p>{plan.idealFor}</p>
+                </div>
+
+                <a
+                  className="sponsor-contact"
+                  href={contactMailto(
+                    `Plan ${plan.name} de Yuu Bus`,
+                    `Hola, me interesa el plan ${plan.name.charAt(0)}${plan.name.slice(1).toLowerCase()} de Yuu Bus.`,
+                  )}
+                  onClick={() => trackSiteEvent('business_plan_selected', { plan: plan.id, placement: 'anunciate' })}
+                >
+                  <span className="material-symbols-rounded" aria-hidden="true">mail</span>
+                  Quiero este plan
+                </a>
+              </article>
+            )
+          })}
         </div>
-        <a
-          className="sponsor-contact sponsor-contact--global"
-          href={contactMailto(
-            'Anunciar mi negocio en Yuu Bus',
-            'Hola, quiero anunciar mi negocio en Yuu Bus. ¿Podrían compartirme información sobre los planes?',
-          )}
-        >
-          <span className="material-symbols-rounded" aria-hidden="true">mail</span>
-          Quiero anunciar mi negocio
-        </a>
       </div>
     </section>
   )

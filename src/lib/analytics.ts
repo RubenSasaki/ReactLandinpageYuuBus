@@ -91,3 +91,16 @@ export function trackConversion(
   initializeMetaPixel()
   window.fbq?.('trackCustom', event, { ...details, ...campaignContext() })
 }
+
+type SiteEvent =
+  | 'routes_preview_click'
+  | 'routes_page_view'
+  | 'route_detail_view'
+  | 'business_plans_preview_click'
+  | 'business_plan_selected'
+
+export function trackSiteEvent(event: SiteEvent, details: Record<string, string>) {
+  if (getMeasurementConsent() !== 'granted') return
+  initializeMetaPixel()
+  window.fbq?.('trackCustom', event, { ...details, ...campaignContext() })
+}

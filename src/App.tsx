@@ -5,12 +5,30 @@ import { AdvertisePage } from './pages/AdvertisePage'
 import { CollaboratePage } from './pages/CollaboratePage'
 import { PrivacyPage } from './pages/PrivacyPage'
 import { TermsPage } from './pages/TermsPage'
-import { initializeMetaPixel } from './lib/analytics'
+import { initializeMetaPixel, openCookiePreferences, trackSiteEvent } from './lib/analytics'
 
 export default function App() {
   const path = window.location.pathname.replace(/\/+$/, '') || '/'
+  const staticPage = document.body.dataset.yuubusStaticPage
 
-  useEffect(() => initializeMetaPixel(), [])
+  useEffect(() => {
+    initializeMetaPixel()
+
+    if (staticPage === 'routes') {
+      trackSiteEvent('routes_page_view', { path: '/rutas/' })
+    } else if (staticPage === 'route-detail') {
+      trackSiteEvent('route_detail_view', {
+        route_id: document.body.dataset.routeId ?? 'unknown',
+      })
+    }
+
+    const handleStaticClick = (event: MouseEvent) => {
+      const target = event.target instanceof Element ? event.target : null
+      if (target?.closest('[data-cookie-preferences]')) openCookiePreferences()
+    }
+    document.addEventListener('click', handleStaticClick)
+    return () => document.removeEventListener('click', handleStaticClick)
+  }, [staticPage])
 
   let page
 
@@ -22,7 +40,7 @@ export default function App() {
 
   return (
     <>
-      {page}
+      {staticPage ? null : page}
       <AnalyticsConsent />
     </>
   )

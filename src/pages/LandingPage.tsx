@@ -9,6 +9,8 @@ import { MobileStickyCTA } from '../components/MobileStickyCTA'
 import { ProblemSection } from '../components/ProblemSection'
 import { RouteDivider } from '../components/BrandMotifs'
 import { Stats } from '../components/Stats'
+import { HomeBusinessPreview } from '../components/HomeBusinessPreview'
+import { HomeRoutesPreview } from '../components/HomeRoutesPreview'
 
 export function LandingPage() {
   return (
@@ -23,7 +25,9 @@ export function LandingPage() {
         <FeatureExplorer />
         <RouteDivider />
         <DiscoverySection />
+        <HomeRoutesPreview />
         <FinalCTA />
+        <HomeBusinessPreview />
       </main>
       <Footer />
       <MobileStickyCTA />

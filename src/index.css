@@ -1968,8 +1968,7 @@ footer p a {
 .measurement-actions button:focus-visible { outline: 3px solid var(--xoconoxtle); outline-offset: 2px; }
 
 @media (max-width: 920px) {
-  .nav-actions .nav-link:nth-child(3),
-  .nav-actions .nav-link:nth-child(4) { display: none; }
+  .nav-actions .nav-optional { display: none; }
   .problem-section { grid-template-columns: auto 1fr; }
   .problem-section > p { grid-column: 2; }
   .how-screen { height: 310px; }
@@ -2607,10 +2606,10 @@ body.is-scrolled .nav-link.is-active:not(.nav-download) {
 .content-checklist li::before { content: ''; position: absolute; top: 0.58em; left: 0; width: 9px; height: 9px; background: var(--xoconoxtle); border: 2px solid #fff; border-radius: 50%; box-shadow: 0 0 0 1px var(--xoconoxtle); }
 
 .content-page .sponsor-section { padding-top: 72px; background: #fffdf9; }
-.content-page .sponsor-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.content-page .sponsor-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .content-page .sponsor-card { border-radius: 20px 20px 20px 6px; box-shadow: 0 12px 32px rgba(53, 32, 120, 0.07); }
-.content-page .sponsor-card-header { height: 100%; padding: 26px 22px; }
-.content-page .sponsor-card h3 { font-size: 17px; letter-spacing: 0.06em; }
+.content-page .sponsor-card-header { padding: 26px 22px; }
+.content-page .sponsor-card h3 { font-size: 20px; letter-spacing: 0.04em; }
 .content-page .sponsor-price { font-size: 18px; }
 .sponsor-contact--global { width: fit-content; min-width: 260px; margin: 34px auto 0; background: var(--anil); }
 
@@ -2727,4 +2726,363 @@ body:has(.measurement-consent) .mobile-sticky-cta { display: none; }
   .measurement-actions { display: grid; grid-template-columns: repeat(2, 1fr); }
   .measurement-actions .measurement-accept { grid-column: 1 / -1; }
   .measurement-actions button { width: 100%; }
+}
+
+/* =========================================================
+   YUU BUS v1.0 — superficies comerciales y rutas públicas
+   ========================================================= */
+.sponsor-billing {
+  display: block;
+  margin-top: 3px;
+  color: rgba(255,255,255,0.78);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.routes-preview,
+.business-preview {
+  width: min(calc(100% - 40px), 1120px);
+  margin: 0 auto;
+}
+
+.routes-preview {
+  padding: 88px 0;
+}
+
+.routes-preview > header {
+  max-width: 680px;
+  margin-bottom: 30px;
+}
+
+.routes-preview h2,
+.business-preview h2 {
+  margin-bottom: 12px;
+  color: var(--anil);
+  font: 700 clamp(30px, 4vw, 46px)/1.08 'Inter', sans-serif;
+  letter-spacing: -0.035em;
+}
+
+.routes-preview header > p:last-child,
+.business-preview-copy > p {
+  color: var(--medio);
+  line-height: 1.65;
+}
+
+.routes-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.route-preview-card {
+  --route-color: var(--anil);
+  min-height: 170px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--texto);
+  background: var(--blanco);
+  border: 1px solid color-mix(in srgb, var(--route-color) 24%, var(--borde));
+  border-top: 5px solid var(--route-color);
+  border-radius: 18px 18px 18px 6px;
+  text-decoration: none;
+  box-shadow: 0 12px 30px rgba(53,32,120,0.07);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.route-preview-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 36px rgba(53,32,120,0.12);
+}
+
+.route-preview-card:focus-visible,
+.routes-preview-cta:focus-visible,
+.business-preview a:focus-visible,
+.route-page-nav a:focus-visible,
+.web-route-card a:focus-visible,
+.route-breadcrumb a:focus-visible,
+.route-download a:focus-visible {
+  outline: 3px solid var(--xoconoxtle);
+  outline-offset: 3px;
+}
+
+.route-preview-code {
+  margin-bottom: 18px;
+  padding: 6px 9px;
+  color: var(--blanco);
+  background: var(--route-color);
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.route-preview-card strong { font-size: 14px; line-height: 1.4; }
+.route-preview-card > span:last-child { margin-top: auto; padding-top: 14px; color: var(--medio); font-size: 11px; }
+
+.routes-preview-cta,
+.business-preview a {
+  width: fit-content;
+  min-height: 48px;
+  margin-top: 24px;
+  padding: 12px 17px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--blanco);
+  background: var(--anil);
+  border-radius: 13px;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.business-preview {
+  margin-top: 34px;
+  margin-bottom: 86px;
+  padding: clamp(28px, 5vw, 52px);
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 64px);
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: 28px 28px 28px 8px;
+  box-shadow: 0 18px 48px rgba(53,32,120,0.08);
+}
+
+.business-preview ul {
+  margin-top: 22px;
+  display: grid;
+  gap: 10px;
+  list-style: none;
+}
+
+.business-preview li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--medio);
+  line-height: 1.5;
+}
+
+.business-preview li::before {
+  content: '';
+  position: absolute;
+  top: 0.55em;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  background: var(--xoconoxtle);
+  border: 2px solid var(--blanco);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--xoconoxtle);
+}
+
+.business-plan-preview { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.business-plan-pill {
+  --plan-accent: var(--anil);
+  min-height: 112px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  color: var(--texto);
+  background: color-mix(in srgb, var(--plan-accent) 8%, var(--blanco));
+  border: 1px solid color-mix(in srgb, var(--plan-accent) 24%, var(--borde));
+  border-top: 4px solid var(--plan-accent);
+  border-radius: 16px 16px 16px 5px;
+}
+.business-plan-pill--naranja { --plan-accent: var(--xoconoxtle); }
+.business-plan-pill--grana { --plan-accent: var(--grana); }
+.business-plan-pill--maguey { --plan-accent: var(--maguey); }
+.business-plan-pill strong { color: var(--plan-accent); font-size: 12px; letter-spacing: 0.05em; }
+.business-plan-pill span { font-size: 14px; font-weight: 700; line-height: 1.35; }
+
+body[data-yuubus-static-page] {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body[data-yuubus-static-page] > main { flex: 1; }
+body[data-yuubus-static-page] > #root { display: contents; }
+
+.route-page-nav { display: flex; align-items: center; gap: 8px; }
+.route-page-nav a {
+  min-height: 44px;
+  padding: 0 11px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--anil);
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.route-page-nav a:hover { background: rgba(53,32,120,0.07); }
+
+.routes-page,
+.route-detail-page { background: var(--fondo); }
+
+.routes-page-hero,
+.routes-directory,
+.route-detail-page > section,
+.route-detail-page > header,
+.route-breadcrumb {
+  width: min(calc(100% - 40px), 1120px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.routes-page-hero { padding: 76px 0 42px; }
+.routes-page-hero h1,
+.route-detail-hero h1 {
+  max-width: 900px;
+  margin: 9px 0 16px;
+  color: var(--anil);
+  font: 700 clamp(38px, 6vw, 68px)/1.03 'Inter', sans-serif;
+  letter-spacing: -0.045em;
+}
+.routes-page-hero > p:last-child,
+.route-detail-hero > p { max-width: 720px; color: var(--medio); font-size: 17px; line-height: 1.65; }
+
+.routes-directory { padding-bottom: 92px; }
+.routes-search {
+  margin-bottom: 28px;
+  padding: 20px;
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: 18px 18px 18px 6px;
+}
+.routes-search label { display: block; margin-bottom: 9px; color: var(--anil); font-size: 13px; font-weight: 800; }
+.routes-search input {
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 15px;
+  color: var(--texto);
+  background: var(--fondo);
+  border: 1px solid rgba(53,32,120,0.18);
+  border-radius: 12px;
+  font: 500 15px/1.4 'Inter', sans-serif;
+}
+.routes-search input:focus { outline: 3px solid rgba(245,106,22,0.32); border-color: var(--xoconoxtle); }
+.routes-search p { margin-top: 9px; color: var(--medio); font-size: 12px; }
+
+.web-routes-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.web-route-card {
+  --route-color: var(--anil);
+  min-height: 262px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  background: var(--blanco);
+  border: 1px solid color-mix(in srgb, var(--route-color) 22%, var(--borde));
+  border-top: 5px solid var(--route-color);
+  border-radius: 20px 20px 20px 6px;
+  box-shadow: 0 12px 30px rgba(53,32,120,0.07);
+}
+.web-route-card[hidden] { display: none; }
+.web-route-card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 19px; }
+.web-route-code,
+.route-detail-code { color: var(--route-color); font-size: 13px; font-weight: 900; letter-spacing: 0.06em; }
+.web-route-status { padding: 5px 8px; color: var(--maguey); background: rgba(29,75,58,0.09); border-radius: 999px; font-size: 10px; font-weight: 800; }
+.web-route-card h2 { margin-bottom: 9px; color: var(--texto); font: 700 18px/1.3 'Inter', sans-serif; }
+.web-route-card p { color: var(--medio); font-size: 13px; line-height: 1.5; }
+.web-route-card .web-route-journey { margin-bottom: 10px; color: var(--texto); font-weight: 700; }
+.web-route-card a { width: fit-content; min-height: 44px; margin-top: auto; padding-top: 18px; display: inline-flex; align-items: center; color: var(--anil); font-size: 13px; font-weight: 800; text-decoration: none; }
+.routes-empty { padding: 36px; color: var(--medio); background: var(--blanco); border: 1px dashed var(--borde); border-radius: 18px; text-align: center; }
+
+.route-breadcrumb { padding-top: 34px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; color: var(--medio); font-size: 12px; }
+.route-breadcrumb a { min-height: 36px; display: inline-flex; align-items: center; color: var(--anil); font-weight: 800; text-decoration: none; }
+.route-detail-hero { padding-top: 38px; padding-bottom: 42px; }
+.route-detail-hero > div { display: flex; align-items: center; gap: 12px; }
+.route-detail-hero h1 { color: var(--texto); }
+.route-detail-hero h1 span { color: var(--route-color); }
+.route-detail-code { padding: 7px 10px; color: var(--blanco); background: var(--route-color); border-radius: 8px; }
+
+.route-fact {
+  margin-bottom: 24px;
+  padding: 22px 24px;
+  color: var(--texto);
+  background: color-mix(in srgb, var(--route-color) 8%, var(--blanco));
+  border-left: 5px solid var(--route-color);
+  border-radius: 6px 16px 16px 6px;
+  line-height: 1.65;
+}
+
+.route-map-section,
+.route-stops,
+.route-download {
+  margin-bottom: 28px;
+  padding: clamp(24px, 4vw, 40px);
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: 24px 24px 24px 8px;
+}
+.route-map-section h2,
+.route-stops > h2,
+.route-download h2 { margin: 8px 0 10px; color: var(--anil); font: 700 clamp(24px, 3vw, 34px)/1.15 'Inter', sans-serif; }
+.route-map-section > div > p:last-child,
+.route-download p { color: var(--medio); line-height: 1.6; }
+.route-map-svg { width: 100%; height: auto; margin-top: 24px; display: block; }
+.route-map-svg rect { fill: color-mix(in srgb, var(--route-color) 5%, var(--fondo)); stroke: color-mix(in srgb, var(--route-color) 18%, var(--borde)); }
+.route-map-line { fill: none; stroke: var(--route-color); stroke-linecap: round; stroke-linejoin: round; stroke-width: 5; }
+.route-map-line--return { opacity: 0.48; stroke-dasharray: 8 8; }
+.route-map-node { stroke: var(--blanco); stroke-width: 4; }
+.route-map-node--start { fill: var(--maguey); }
+.route-map-node--end { fill: var(--xoconoxtle); }
+
+.route-stops-grid { margin-top: 24px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.route-stops-group h2 { margin-bottom: 14px; color: var(--route-color); font: 700 18px/1.3 'Inter', sans-serif; }
+.route-stops-group ol { padding-left: 28px; columns: 2; column-gap: 30px; }
+.route-stops-group li { margin-bottom: 9px; break-inside: avoid; color: var(--medio); font-size: 13px; line-height: 1.45; }
+
+.route-download { margin-bottom: 80px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+.route-download > div { max-width: 680px; }
+.route-download a { flex: 0 0 auto; min-height: 50px; padding: 14px 18px; display: inline-flex; align-items: center; justify-content: center; color: var(--blanco); background: var(--anil); border-radius: 14px; font-size: 13px; font-weight: 800; text-decoration: none; }
+
+@media (max-width: 900px) {
+  .routes-preview-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .web-routes-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .route-stops-group ol { columns: 1; }
+}
+
+@media (max-width: 700px) {
+  .business-preview { grid-template-columns: 1fr; }
+  .route-stops-grid { grid-template-columns: 1fr; }
+  .route-download { align-items: stretch; flex-direction: column; }
+  .route-download a { width: 100%; }
+}
+
+@media (max-width: 620px) {
+  .routes-preview,
+  .business-preview,
+  .routes-page-hero,
+  .routes-directory,
+  .route-detail-page > section,
+  .route-detail-page > header,
+  .route-breadcrumb { width: min(calc(100% - 36px), 1120px); }
+  .routes-preview { padding: 68px 0; }
+  .routes-preview-grid,
+  .web-routes-grid { grid-template-columns: 1fr; }
+  .route-preview-card { min-height: 148px; }
+  .business-preview { margin-bottom: 68px; padding: 25px 20px; }
+  .business-plan-preview { grid-template-columns: 1fr; }
+  .business-plan-pill { min-height: 88px; }
+  .route-page-nav { gap: 0; }
+  .route-page-nav a { padding-inline: 7px; font-size: 11px; }
+  .route-page-nav a:last-child { display: none; }
+  .routes-page-hero { padding-top: 58px; }
+  .routes-page-hero h1,
+  .route-detail-hero h1 { font-size: 38px; }
+  .route-map-section,
+  .route-stops,
+  .route-download { padding: 22px 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-preview-card { transition: none; }
+  .route-preview-card:hover { transform: none; }
 }

@@ -10,7 +10,7 @@ export function Footer() {
       <span className="footer-studio">Un producto de MonteCode</span>
       <strong className="footer-trust">Hecho para moverse por Oaxaca.</strong>
       <nav className="footer-links" aria-label="Enlaces del pie de página">
-        <a href="/#rutas">Rutas</a>
+        <a href="/rutas/">Rutas</a>
         <a href="/anunciate/">Anúnciate</a>
         <a href="/colabora/">Colabora</a>
         <a href="/privacy/">Aviso de Privacidad</a>

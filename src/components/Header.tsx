@@ -47,17 +47,14 @@ export function Header() {
         </a>
 
         <div className="nav-actions">
-          <a className={`nav-link${activeSection === 'rutas' ? ' is-active' : ''}`} href="#rutas" aria-current={activeSection === 'rutas' ? 'location' : undefined}>
+          <a className="nav-link" href="/rutas/">
             Rutas
           </a>
-          <a className={`nav-link${activeSection === 'features' ? ' is-active' : ''}`} href="#features" aria-current={activeSection === 'features' ? 'location' : undefined}>
-            Características
+          <a className="nav-link" href="/anunciate/">
+            Anúnciate
           </a>
-          <a className={`nav-link${activeSection === 'oaxaca' ? ' is-active' : ''}`} href="#oaxaca" aria-current={activeSection === 'oaxaca' ? 'location' : undefined}>
+          <a className={`nav-link nav-optional${activeSection === 'oaxaca' ? ' is-active' : ''}`} href="#oaxaca" aria-current={activeSection === 'oaxaca' ? 'location' : undefined}>
             Oaxaca
-          </a>
-          <a className="nav-link" href="/privacy/">
-            Privacidad
           </a>
           <a
             className="nav-link nav-download"

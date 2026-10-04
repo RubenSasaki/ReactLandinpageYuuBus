@@ -1,0 +1,22 @@
+{
+  "id": "dpl_GCdGNDVezoHn1r2NnWSABVYzMxQz",
+  "name": "react-landinpage-yuu-bus",
+  "url": "react-landinpage-yuu-c8la6r4by-yuubus.vercel.app",
+  "createdAt": 1789509511609,
+  "ready": 1789509529829,
+  "target": "production",
+  "source": "cli",
+  "meta": {
+    "gitCommitAuthorName": "RubenSasaki",
+    "gitCommitAuthorEmail": "rubengioreyes@outlook.com",
+    "gitCommitMessage": "Generate Home statistics from routes feed",
+    "gitCommitRef": "codex/production-events-review-20260915",
+    "gitCommitSha": "10f187265fdebd2b40cf49780f662dbd3c10038f",
+    "gitDirty": "1",
+    "gitRootDirectory": "",
+    "purpose": "approved-frontend-final-polish-production",
+    "actor": "codex"
+  },
+  "projectId": "prj_y7XxNKdmQMSLxBzTOAEIWQ5axbcZ",
+  "framework": "vite"
+}

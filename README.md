@@ -1,45 +1,21 @@
-# Yuu Bus Landing — migración local
+# YuuBus — production recovery
 
-Migración de la landing HTML suministrada a React + Vite + Tailwind CSS.
+This branch rebuilds the landing currently deployed on yuubus.com from preserved Vercel evidence. Read [the recovery report](recovery/RECOVERY-REPORT.md) before editing.
 
-## Estado v0.3
+## Build and verify
 
-- Copy principal de la landing preservado.
-- Componentes React separados.
-- Navegación fija y estado al hacer scroll.
-- Hero con mockups reales y controles manuales, sin autoplay.
-- Se incorporaron las 7 capturas nuevas suministradas y se optimizaron a WebP (944×2048).
-- El showcase mantiene tres teléfonos visibles a la vez y permite recorrer Inicio, Planear viaje, Destino, Opciones, Rutas, Seguir ruta y Eventos.
-- Selector de cinco características actualizado con las nuevas capturas.
-- Los marcos de teléfono respetan la proporción real de las capturas y ya no superponen un notch artificial.
-- Micro-tilt de QR y showcase con respeto a `prefers-reduced-motion`.
-- SEO base, `robots.txt`, `sitemap.xml` y `vercel.json` preparados.
-- Sección de cuatro planes de patrocinio agregada con precios, beneficios y públicos objetivo suministrados.
-- CTA por correo preparado mediante `SPONSOR_CONTACT_EMAIL`; falta colocar la dirección real para activarlo.
-- No se incluyó ningún JSON de rutas/eventos/feed.
-
-## Capturas incorporadas
-
-- `public/assets/screens/inicio.webp`
-- `public/assets/screens/planear-viaje-inicio.webp`
-- `public/assets/screens/planear-viaje.webp`
-- `public/assets/screens/opciones-viaje.webp`
-- `public/assets/screens/rutas.webp`
-- `public/assets/screens/seguir-ruta.webp`
-- `public/assets/screens/eventos.webp`
-
-## Pendiente porque no fue suministrado
-
-- `landing.js` original para comparar comportamiento exacto.
-- `qr-code.png`.
-- Contenido original de la política de privacidad.
-- Correo real que recibirá las solicitudes de patrocinio.
-
-## Comandos
-
-```bash
-npm install
-npm run lint
+```sh
+npm ci
 npm run build
-npm run preview
+npm run verify
 ```
+
+The active application is editable JavaScript in `src/recovered/landing.js`, with separate business chunks and `theme.css`. It was mechanically recovered from the production bundles. Original TypeScript types and original file boundaries are not recoverable without sourcemaps. The exact React runtime is retained to avoid changing behavior during recovery.
+
+`recovery/source-20260915/` preserves the earlier editable TypeScript source. It is historical evidence and is not the active application. `public/` preserves production assets, snapshots and static pages. Builds do not fetch fresh route/event data. The build keeps the existing pages and replaces only references to rebuilt application assets.
+
+Preview: https://react-landinpage-yuu-5s3b15tpu-yuubus.vercel.app
+
+Branch: `codex/landing-production-recovery-20261003`
+
+No production deployment or main merge is included in this recovery.

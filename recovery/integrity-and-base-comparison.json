@@ -1,0 +1,80 @@
+{
+  "integrity": [
+    {
+      "date": "20260915",
+      "files": 244,
+      "maps": 0,
+      "sha1Mismatches": []
+    },
+    {
+      "date": "20260924",
+      "files": 119,
+      "maps": 0,
+      "sha1Mismatches": []
+    },
+    {
+      "date": "20260926",
+      "files": 155,
+      "maps": 0,
+      "sha1Mismatches": []
+    }
+  ],
+  "comparison": [
+    {
+      "branch": "origin",
+      "equal": 23,
+      "changed": 28,
+      "missing": 17,
+      "sha": "10f187265fdebd2b40cf49780f662dbd3c10038f"
+    },
+    {
+      "branch": "origin/codex/dynamic-home-route-stats",
+      "equal": 23,
+      "changed": 28,
+      "missing": 17,
+      "sha": "10f187265fdebd2b40cf49780f662dbd3c10038f"
+    },
+    {
+      "branch": "origin/main",
+      "equal": 23,
+      "changed": 28,
+      "missing": 17,
+      "sha": "10f187265fdebd2b40cf49780f662dbd3c10038f"
+    },
+    {
+      "branch": "origin/codex/navbar-maplibre-route-details",
+      "equal": 22,
+      "changed": 28,
+      "missing": 18,
+      "sha": "3f7e149cca21c02dc1aca8c7434d74c79f4d1f45"
+    },
+    {
+      "branch": "origin/codex/commercial-routes-seo",
+      "equal": 18,
+      "changed": 28,
+      "missing": 22,
+      "sha": "4e68b74a2cd95f9732a699c93013a1405430f881"
+    },
+    {
+      "branch": "origin/codex/footer-consent-pages",
+      "equal": 17,
+      "changed": 26,
+      "missing": 25,
+      "sha": "167db7994051ea5b9aac314f5d7c03dc779a0bdb"
+    },
+    {
+      "branch": "origin/codex/brand-experience-phase-2",
+      "equal": 15,
+      "changed": 22,
+      "missing": 31,
+      "sha": "bcfb4a97571ebc7b4a6f52d7f9341e36b4827ef2"
+    },
+    {
+      "branch": "origin/codex/landing-master-review",
+      "equal": 12,
+      "changed": 23,
+      "missing": 33,
+      "sha": "ae1810017ad3135ba11b07557abf098bcba3d6fc"
+    }
+  ]
+}

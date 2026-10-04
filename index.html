@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YuuBus — Rutas y transporte público en Oaxaca</title>
-    <meta name="description" content="Consulta rutas, paradas y recorridos de transporte público en Oaxaca. Encuentra tu destino y descubre cómo llegar con YuuBus." />
+    <title>YuuBus — Muévete y descubre Oaxaca</title>
+    <meta name="description" content="Consulta rutas de transporte público, descubre eventos, lugares y negocios de Oaxaca y planea cómo llegar con YuuBus." />
     <meta name="robots" content="index, follow, max-image-preview:large" />
-    <meta property="og:title" content="YuuBus — Rutas y transporte público en Oaxaca" />
-    <meta property="og:description" content="Consulta rutas, paradas y recorridos de transporte público en Oaxaca. Encuentra tu destino y descubre cómo llegar." />
+    <meta property="og:title" content="YuuBus — Muévete y descubre Oaxaca" />
+    <meta property="og:description" content="Consulta rutas, descubre eventos y negocios de Oaxaca y encuentra cómo llegar con YuuBus." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.yuubus.com/" />
     <meta property="og:site_name" content="YuuBus" />
@@ -17,16 +17,15 @@
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="YuuBus, rutas y transporte público en Oaxaca" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="YuuBus — Rutas y transporte público en Oaxaca" />
+    <meta name="twitter:title" content="YuuBus — Muévete y descubre Oaxaca" />
     <meta name="twitter:description" content="Encuentra tu destino y descubre cómo llegar en transporte público por Oaxaca." />
     <meta name="twitter:image" content="https://www.yuubus.com/og-yuubus.png" />
     <link rel="canonical" href="https://www.yuubus.com/" />
     <meta name="theme-color" content="#352078" />
     <link rel="icon" type="image/png" href="/yuubus-icon-192.png" />
     <link rel="apple-touch-icon" href="/yuubus-icon-192.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" href="/assets/production-202609/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" as="image" fetchpriority="high" href="/assets/discovery-202609/home-640.avif" type="image/avif" imagesrcset="/assets/discovery-202609/home-320.avif 320w, /assets/discovery-202609/home-640.avif 640w, /assets/discovery-202609/home-960.avif 960w" imagesizes="(max-width: 620px) 230px, 280px" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -52,9 +51,9 @@
         ]
       }
     </script>
+    <script type="module" crossorigin src="/src/recovered/landing.js"></script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

@@ -1,42 +1,51 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "redirects": [
+  "version": 2,
+  "routes": [
     {
-      "source": "/(.*)",
+      "src": "/(.*)",
       "has": [
         {
           "type": "host",
           "value": "yuubus.com"
         }
       ],
-      "destination": "https://www.yuubus.com/$1",
-      "permanent": true
-    }
-  ],
-  "headers": [
-    {
-      "source": "/assets/:path*",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
+      "headers": {
+        "Location": "https://www.yuubus.com/$1"
+      },
+      "status": 308
     },
     {
-      "source": "/og-yuubus.png",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=86400"
-        }
-      ]
-    }
-  ],
-  "rewrites": [
+      "src": "/assets/(.*)",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      },
+      "continue": true
+    },
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/og-yuubus.png",
+      "headers": {
+        "Cache-Control": "public, max-age=86400"
+      },
+      "continue": true
+    },
+    {
+      "src": "/negocios/rancho-mijangos-preview(?:/.*)?",
+      "headers": {
+        "X-Robots-Tag": "noindex, nofollow"
+      },
+      "continue": true
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/eventos/(.*)",
+      "dest": "/eventos/no-disponible.html",
+      "status": 404
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }

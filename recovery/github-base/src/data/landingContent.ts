@@ -1,0 +1,149 @@
+export const GOOGLE_PLAY_URL =
+  'https://play.google.com/store/apps/details?id=mx.oaxaca.rutasoaxaca'
+
+export function withCampaignParameters(url: string) {
+  if (typeof window === 'undefined') return url
+
+  const destination = new URL(url)
+  const current = new URLSearchParams(window.location.search)
+
+  for (const key of ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content']) {
+    const value = current.get(key)
+    if (value) destination.searchParams.set(key, value)
+  }
+
+  return destination.toString()
+}
+
+export const showcaseScreens = [
+  {
+    src: '/assets/screens/inicio.webp',
+    alt: 'Pantalla de inicio de Yuu Bus con accesos a movilidad y agenda de Oaxaca',
+    label: 'Inicio',
+    width: 944,
+    height: 2048,
+  },
+  {
+    src: '/assets/screens/planear-viaje-inicio.webp',
+    alt: 'Pantalla para planear un viaje antes de elegir el destino en Yuu Bus',
+    label: 'Planear viaje',
+    width: 944,
+    height: 2048,
+  },
+  {
+    src: '/assets/screens/planear-viaje.webp',
+    alt: 'Pantalla para planear un viaje con origen y destino seleccionados en Yuu Bus',
+    label: 'Destino',
+    width: 944,
+    height: 2048,
+  },
+  {
+    src: '/assets/screens/opciones-viaje.webp',
+    alt: 'Opciones de viaje directas y con conexión en Yuu Bus',
+    label: 'Opciones',
+    width: 944,
+    height: 2048,
+  },
+  {
+    src: '/assets/screens/rutas.webp',
+    alt: 'Listado de rutas de Yuu Bus con datos locales',
+    label: 'Rutas',
+    width: 944,
+    height: 2048,
+  },
+  {
+    src: '/assets/screens/seguir-ruta.webp',
+    alt: 'Seguimiento de una ruta sobre el mapa de Yuu Bus',
+    label: 'Seguir ruta',
+    width: 944,
+    height: 2048,
+  },
+  {
+    src: '/assets/screens/eventos.webp',
+    alt: 'Pantalla de eventos y actividades culturales en Yuu Bus',
+    label: 'Eventos',
+    width: 944,
+    height: 2048,
+  },
+] as const
+
+export const howItWorks = [
+  {
+    step: '01',
+    icon: 'search',
+    title: 'Busca tu destino',
+    description: 'Escribe a dónde vas o elige el punto directamente en el mapa.',
+    image: '/assets/screens/planear-viaje-inicio.webp',
+    alt: 'Pantalla de Yuu Bus para elegir origen y destino',
+    width: 944,
+    height: 2048,
+  },
+  {
+    step: '02',
+    icon: 'route',
+    title: 'Elige una ruta',
+    description: 'Compara viaje directo, transbordo o caminata antes de salir.',
+    image: '/assets/screens/opciones-viaje.webp',
+    alt: 'Opciones de viaje directas y con transbordo en Yuu Bus',
+    width: 944,
+    height: 2048,
+  },
+  {
+    step: '03',
+    icon: 'near_me',
+    title: 'Mira cómo llegar',
+    description: 'Consulta el recorrido y las paradas para moverte con más claridad.',
+    image: '/assets/screens/seguir-ruta.webp',
+    alt: 'Seguimiento de una ruta y sus paradas en el mapa de Yuu Bus',
+    width: 944,
+    height: 2048,
+  },
+] as const
+
+export const features = [
+  {
+    icon: 'route',
+    title: 'Rutas con trabajo de campo',
+    description: 'Cada parada fue capturada a pie, verificando el recorrido real del camión.',
+    image: '/assets/screens/seguir-ruta.webp',
+    alt: 'Seguimiento de una ruta con paradas y horarios en el mapa de Yuu Bus',
+    width: 944,
+    height: 2048,
+  },
+  {
+    icon: 'multiple_stop',
+    title: 'Directa, transbordo o caminando',
+    description: '"Planea tu viaje" compara todas las opciones para llegar a tu destino.',
+    image: '/assets/screens/opciones-viaje.webp',
+    alt: 'Opciones de viaje directas y con conexión mostradas en Yuu Bus',
+    width: 944,
+    height: 2048,
+  },
+  {
+    icon: 'near_me',
+    title: 'Paradas cerca de ti',
+    description: 'Ve qué rutas pasan a tu alrededor en tiempo real, con su dirección y sentido.',
+    image: '/assets/screens/inicio.webp',
+    alt: 'Pantalla de inicio de Yuu Bus con el acceso Cerca de mí',
+    width: 944,
+    height: 2048,
+  },
+  {
+    icon: 'theater_comedy',
+    title: 'Eventos y cultura',
+    description: 'Calendas, Guelaguetza, tianguis — con las rutas para llegar a cada uno.',
+    image: '/assets/screens/eventos.webp',
+    alt: 'Pantalla de eventos y actividades culturales en Yuu Bus',
+    width: 944,
+    height: 2048,
+  },
+  {
+    icon: 'signal_wifi_off',
+    title: 'Funciona sin internet',
+    description: 'Consulta rutas y paradas aunque no tengas señal. Los datos viven en tu teléfono.',
+    image: '/assets/screens/rutas.webp',
+    alt: 'Listado de rutas de Yuu Bus con la indicación de datos locales',
+    width: 944,
+    height: 2048,
+  },
+] as const

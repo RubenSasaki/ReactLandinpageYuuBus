@@ -1,0 +1,6 @@
+# Preserve the exact recovered deployment bytes across Windows/Linux checkouts.
+src/** text eol=lf
+scripts/** text eol=lf
+*.json text eol=lf
+public/** -text
+recovery/** -text

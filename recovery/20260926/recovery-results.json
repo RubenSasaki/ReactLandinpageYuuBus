@@ -1,0 +1,777 @@
+[
+  {
+    "path": "src/.vercel/output/static/assets/discovery-202609/home-320.avif",
+    "bytes": 17244,
+    "sha256": "6f3c496ca4df0d0ad657058e53c4d4f8cb96d2125cb12dfdc1518e417686210f"
+  },
+  {
+    "path": "src/.vercel/output/config.json",
+    "bytes": 948,
+    "sha256": "78b128c2286fbd79624ed0d7c07bf60c59c6ac2146631f8d8394d3c5583ebb84"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/BusinessCard-CIwujBsx.js",
+    "bytes": 3887,
+    "sha256": "5364cf802d9c677195f646c2de1d7f83b7cdbb24ba63dc340d893d9fb245d165"
+  },
+  {
+    "path": "src/.vercel/output/static/.vite/manifest.json",
+    "bytes": 1626,
+    "sha256": "a06c056ff5fb5f023af9a0550c70e275793bdbe1f1d6866f4adb82f9c5066691"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/RanchoBusinessPreview-DUgnfVgf.js",
+    "bytes": 433,
+    "sha256": "8d02cb887b97ec27e5fc58ca9834e7ec1ef62c1cfc62996361d6dc2ca7cb40a0"
+  },
+  {
+    "path": "src/.vercel/output/static/anunciate/index.html",
+    "bytes": 3707,
+    "sha256": "b7cf6bc65b5ddd8477327d119b26b6b1f2f63fcd4964d8a997762b79d55084db"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/discovery-202609/home-320.webp",
+    "bytes": 26690,
+    "sha256": "2a512ec5d252463a7f518e0fc54127a8ce6bf48ae5a55bbb4e01e78e64f4d81d"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/discovery-202609/home-960.avif",
+    "bytes": 59206,
+    "sha256": "70edb068e4787b9b99d9269690befce77f121e7063280323b016e8b373c26d28"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/discovery-202609/home-640.avif",
+    "bytes": 39656,
+    "sha256": "cd53d9e86622477806632d61d9c532e8ffeac181f8bedd26fb0563c49b5317ea"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/discovery-202609/home-640.webp",
+    "bytes": 62072,
+    "sha256": "68796453c5ed99e4d861d3873b3bd0a9e9dabd5d879044a2de535c38c5a10539"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/discovery-202609/home-960.webp",
+    "bytes": 95534,
+    "sha256": "e9fb24d78ff209de30e5d240d0e51bbf2a4c40b9b96ac1dd76a10f6646284bfc"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/event-og/1065608d-32cd-4289-82e1-d68aeb5130fe-81bd778717121e58.png",
+    "bytes": 409529,
+    "sha256": "81bd778717121e58510380b346c7e276a5e367f194f626b688c15d7a27951b34"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/events-320.avif",
+    "bytes": 21138,
+    "sha256": "897e02051fec760bc9d426549db469c00d0276402d1094bb7372c3545f2ec69d"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/maplibre-gl-worker-Bml_7JYB.js",
+    "bytes": 477721,
+    "sha256": "ed345860ff896d2baf568b1ee4765ab4f3527413115d23896a68230b0c70ff2d"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/maplibre-gl-G1GNPyGF.js",
+    "bytes": 989191,
+    "sha256": "f72822474b16d24f758489a0411ebb5cf7d2a1cf5e1131a97cc74a9ce83952c6"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/event-og/4b6ce534-0c95-443b-a5fc-fd877535efb8-aa404c1fb0bb2785.png",
+    "bytes": 85163,
+    "sha256": "aa404c1fb0bb2785b2bf61ae4ffd97d1a9d38998a9271bf4958ebaf17175413f"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/main-DX7bSXea.css",
+    "bytes": 111621,
+    "sha256": "3959456b9d2986633dec539eada1c1c99eda444944fcce306ac5c0ee1d12c204"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/main-mnCW4kEW.js",
+    "bytes": 270676,
+    "sha256": "07b7ccf99e8251ff945b7cd6daec94dcd6a50c62329ce66e67ffa376ec60f826"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/events-320.webp",
+    "bytes": 28076,
+    "sha256": "8e708c6d633f4390d75a6b8c23aa9fd2dd363745bbbaca8a199b54cfaaaa33f4"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/events-640.avif",
+    "bytes": 50444,
+    "sha256": "bdab9674cc3222350d5e4e299853bbf8f8ccec99009d07f9a87f3803a5c7b0d7"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/home-320.avif",
+    "bytes": 19813,
+    "sha256": "98106b1315a89a9b708698247ec72d85c18c6fd1685f372c95c25e9b8c15d6a4"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/events-640.webp",
+    "bytes": 71762,
+    "sha256": "e5d3f34ceee51518c33af3461b61ebad9e835cafaedbd7b12c8003a3751c72d7"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/events-960.webp",
+    "bytes": 117974,
+    "sha256": "b5fb43e12731de16c6320bea3816cca8ba02ec15cebe42224d44b89aff0e8be6"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/events-960.avif",
+    "bytes": 82666,
+    "sha256": "2722ef6c02ed35bdfea173f2510776b2b4a519092c5fdfff48a366052d1a3702"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/home-640.avif",
+    "bytes": 43644,
+    "sha256": "40858ce93a062779c21c38a46896cb95c723799509e68155fd618955e8441480"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/options-320.avif",
+    "bytes": 20747,
+    "sha256": "1a087e31ea575b109348348461d6159a237796533d0cbbb70f803dcfabf9248d"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/home-320.webp",
+    "bytes": 25160,
+    "sha256": "cb208c69456b871a3a7e34c2957bd9cf267cafe8f300920ef94ceaa4b3db62cf"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/home-640.webp",
+    "bytes": 58858,
+    "sha256": "bf6d726b31517eed50bb8f0a4e23ced276b1d094c87101214724ddf513f9d879"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/home-960.avif",
+    "bytes": 68844,
+    "sha256": "56e9f91fd64f281fd30704576e06d9b344ceda9c603a697ef38b9787914d7678"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/home-960.webp",
+    "bytes": 92902,
+    "sha256": "fbd93bbe4745d1a38819e579b10cd02e68f877f32fb76d124e579146e59dd1ce"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/options-640.avif",
+    "bytes": 49283,
+    "sha256": "612bdc0d988bcc5a3d97141a4e5f449339853230437d7d10bdff15657fe8c93b"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/routes-320.avif",
+    "bytes": 16915,
+    "sha256": "beb0ab8c182ad6760eca3bb48365ffb155a4ceab4f4f4696f6f5a58b2046a1c6"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/options-960.avif",
+    "bytes": 77837,
+    "sha256": "2dcda73c4b403283f55af576c26fd39228013133f48c618cd215d2124a32c661"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/options-320.webp",
+    "bytes": 29904,
+    "sha256": "bb25578376f6f89ad8bd665b02654b70c9d393bace534f93a870e307975246f1"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/options-960.webp",
+    "bytes": 116304,
+    "sha256": "146d117c00a0c1e608088f72a438075709cd3a4dd60cc1ff62e605442eb8cab1"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/options-640.webp",
+    "bytes": 72898,
+    "sha256": "40334c86a472b8bfd2ae5a1db0625db9559df76d7eeebdd89f34676b4ff7cd16"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/routes-640.avif",
+    "bytes": 39884,
+    "sha256": "c44eba718f16ae9a8fe42b57efd01d66d8b513ec976920848f38dcb75c83dfce"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/routes-640.webp",
+    "bytes": 54322,
+    "sha256": "cc0b2b6626ab547d23be42200755a65c9a2a32ff2797cfafa13f2503ffd94798"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/routes-320.webp",
+    "bytes": 22620,
+    "sha256": "078bbaac54b0d205c213685680d287ea440b221e0630b89dd57fdbb46f34c27b"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/trip-320.avif",
+    "bytes": 18785,
+    "sha256": "3a2e599f8d56001041d3eae81a2103080e7f0b5de46a723e032d64ae3e5e1277"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/routes-960.webp",
+    "bytes": 87172,
+    "sha256": "25098c1763f1270da6bbbae789a6922413aeb5efdfa644751aeace8aa069b29a"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/routes-960.avif",
+    "bytes": 59838,
+    "sha256": "a258422b03c6df1f9bb0e8be564af3f9eb92453fb4122085c7776216519537d5"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/trip-640.avif",
+    "bytes": 42031,
+    "sha256": "543ccc08fbab4c347f4a5aeaabf5390952bf5e7e7aa7815276b0fa5b03d71208"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/trip-320.webp",
+    "bytes": 23992,
+    "sha256": "11b88a5a3dec140f545bc0f2945c88eb747454144aefb282286c1034cb091691"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/trip-960.avif",
+    "bytes": 65355,
+    "sha256": "0271e6ac46292a67d2f2c7d2b01bb94466dd023acb5aa52155f371f7b89b1aa5"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/preload-helper-Czpn1I53.js",
+    "bytes": 1196,
+    "sha256": "aba87f2a53e45ecdc9113fc30387d16e449d1676428cf5f82dd624c1df97d152"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/trip-640.webp",
+    "bytes": 58008,
+    "sha256": "0730072f7912a7240ec8340e8dd0f3450a3a565913f29fca8581cef370ca7c53"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/polish-202609/trip-960.webp",
+    "bytes": 92200,
+    "sha256": "7af03cff4039d96b6eaafe22aeb409b4f9f46968dcc242b7c8fc7673a98e3d50"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/production-202609/events-318.avif",
+    "bytes": 26440,
+    "sha256": "d6b3a399fa877795ced954e6b125ccabc4bd79d89fb3174b4bfd50a362ad65e2"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/production-202609/events-159.avif",
+    "bytes": 9707,
+    "sha256": "89dfdafef8738945c58de7dbe8ce8fdd9cff0d614790dfbe1997de0440a68ec0"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/production-202609/Inter-OFL.txt",
+    "bytes": 4377,
+    "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/production-202609/events-159.webp",
+    "bytes": 8588,
+    "sha256": "715697aad2eb97f158f155f1b83c4666d7acf582450a7e5880c6ab26722c8b74"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/production-202609/home-159.avif",
+    "bytes": 9080,
+    "sha256": "33cad479fcad8d02fcd73713d6ae949e0908a1b1bf141a3d2e93f99ffd1e6181"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/production-202609/events-318.webp",
+    "bytes": 20926,
+    "sha256": "324b84c51db391279d559c7b983b02805d0e87f5e9ea3cc4ed6185316a6c5283"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/production-202609/routes-159.avif",
+    "bytes": 9021,
+    "sha256": "dfa38deb4781ffc53765743fc8311d68c1258d8e8a24e55a26030bc960291c33"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/production-202609/routes-159.webp",
+    "bytes": 7738,
+    "sha256": "3d25e1facf9283135dd0f4ed26615c9e341bbc78e4b07c22cc0df1e3e73681df"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/production-202609/home-318.webp",
+    "bytes": 19908,
+    "sha256": "846a2ff9fa0dc89248d7c679c5347a5a88452d95e48bfd610af21616e37639dc"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/production-202609/inter-latin.woff2",
+    "bytes": 48432,
+    "sha256": "c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/production-202609/home-318.avif",
+    "bytes": 24919,
+    "sha256": "ee077a2246a88580bfbe671d10821a719fa1df8bbe2ec0e0c0fa6a7a73241e2d"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/production-202609/home-159.webp",
+    "bytes": 8000,
+    "sha256": "c4a9d96d7927ea8be3ea3bf3d7ce53337d06e4d3af5db4730cb83ac13b310206"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/screens/eventos.webp",
+    "bytes": 109558,
+    "sha256": "bce1be3020848a059aeec20d19eaf66700125598fd73b884a8f61c892ec271ae"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/production-202609/routes-318.avif",
+    "bytes": 25240,
+    "sha256": "b749049c458d79e647c1f7f95826067e3f56b5b9d3a0f2bde52a7b5cfc2fcb41"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/routeMap-CVpqLkp5.js",
+    "bytes": 4255,
+    "sha256": "8d1eb0e6fe8642b7fbbf956198d6953bcd0c00cb5dbb3de6613527673a74886d"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/production-202609/routes-318.webp",
+    "bytes": 19156,
+    "sha256": "7706bdb9f14a351c86f99cef4d3a970b9bc199f52492ec0ee9ef5357b4bc26e9"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/routeMap-BXLA5NCv.css",
+    "bytes": 84306,
+    "sha256": "1dce66a964273ca037d569e21b59d0007838c31aeeb31a47b35da96764e5e989"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/screens/inicio.webp",
+    "bytes": 70518,
+    "sha256": "9f3000913086aae8d2f01d2461cf5d6b021871583991bc842aeeac6d6c3a1382"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/screens/planear-viaje-inicio.webp",
+    "bytes": 85530,
+    "sha256": "12a3fdd698423d10ec3531536b3a987d42d546f757a07fdaad4904aaaae5b8df"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/screens/planear-viaje.webp",
+    "bytes": 88136,
+    "sha256": "74514a6d95ac2175cd588a293e4eca875edee2e6698d5e437b59aa7ba26efc6e"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/screens/seguir-ruta.webp",
+    "bytes": 128276,
+    "sha256": "e4e8cbd3a2a91f0d4825f4f41b8901a9e919fb74f09026ac32fd75cd1d342f06"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/screens/opciones-viaje.webp",
+    "bytes": 93376,
+    "sha256": "1b8a434f6b5b60d1833eb89a0b5f508559f858d174a3e9080d2689772ed98ccb"
+  },
+  {
+    "path": "src/.vercel/output/static/assets/screens/rutas.webp",
+    "bytes": 101130,
+    "sha256": "87179d04b2d515800466571b41156ea3868f61f2205c04c76099d4fb02b8d3ba"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/atardecer-1200.avif",
+    "bytes": 58903,
+    "sha256": "12a12582b239aa36fdc7e21faa0acd432e0ed6360b4b6608c1fd667ae51d9f9f"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/atardecer-480.avif",
+    "bytes": 13842,
+    "sha256": "d158ac48ecb32492002e7e6cb059b98f7f8d1cb85e36d80e536052e934a8e453"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/atardecer-480.webp",
+    "bytes": 15990,
+    "sha256": "48d756a9b2f1beafb6e3e0565a94020c8bc9ae4f040b5a1055ace69214308632"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/atardecer-800.avif",
+    "bytes": 33105,
+    "sha256": "0cfe9492d666be1cf7b7d46d3e93d31052cc3561ab5a01c6cad9be44ac3d052f"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/atardecer-1200.webp",
+    "bytes": 68366,
+    "sha256": "f58de363121a5a03ff519748b0514b1dc9600bdb6f53784d1423b24a1944b58d"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/atardecer-1600.avif",
+    "bytes": 84103,
+    "sha256": "5ceba723e8b0f6402b827d7790a61adc2c4a8b9559f98c21669dbdb01bd6babd"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/atardecer-1600.webp",
+    "bytes": 97992,
+    "sha256": "23fb73bc8a54db2677351bce06d65250ecee9c8738c0c36e1086969b84d22370"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/atardecer-800.webp",
+    "bytes": 39352,
+    "sha256": "ab28ff4cf0c78f4f435220a867fa90d3841a2e98d229d1e32967ae3a99fd536d"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/balcon-480.webp",
+    "bytes": 108742,
+    "sha256": "9af788ea0ae162b60051a5d537bb8a5dce9eb370f9f9958c517015d44eba657e"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/balcon-1200.webp",
+    "bytes": 532890,
+    "sha256": "a9f6b34a2b8383f29846d87427118b18aeba3f0ccbc0e7e76c9f72fc3907213a"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/balcon-480.avif",
+    "bytes": 80019,
+    "sha256": "45785444212636531adeac6e2c395163335c7486f038b2d9b84aae777a265216"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/balcon-800.avif",
+    "bytes": 201627,
+    "sha256": "f970eb41da03e422ab2bc7ddcb0b74447bf2344c03a287639c292a6adb690a6b"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/balcon-1200.avif",
+    "bytes": 370410,
+    "sha256": "d1509ce756b4989c3b8ff3b7b97b7df53213c5e265c299560b8bb49fcd00a786"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/exterior-1200.avif",
+    "bytes": 196822,
+    "sha256": "07d58d65bc4e3256efc200957ed6cd5c60ab08e0ec1f0e19929f7d3d9a26a20a"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/exterior-480.avif",
+    "bytes": 33008,
+    "sha256": "dd99676ab69c439dd7d9dac3711afbec1bedb76ef1f10741d4323134e2ac4232"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/exterior-1600.avif",
+    "bytes": 280800,
+    "sha256": "f2e8c120527458684e1a0bdd1a2f638ad7e09fd8fc63549d4b3348fd02343e73"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/exterior-1200.webp",
+    "bytes": 249136,
+    "sha256": "247e84d3a6fc95471df53b90c446c918e038d6eb4c0baec15314e5f2eaab3353"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/exterior-1600.webp",
+    "bytes": 381802,
+    "sha256": "bb6b41cfa082e09e80fff3b039d49ff17ee84516cb0a6a87b922bfe6b6f03d04"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/balcon-800.webp",
+    "bytes": 280348,
+    "sha256": "22c6bc0da212651faec4cf4793c0d6203e66de9e6e953e32e823496c1c7a1ff6"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/exterior-480.webp",
+    "bytes": 44016,
+    "sha256": "8b60433bb124e1469a9798297868ec4c882cc087573325841fd0fd2809009d48"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/fachada-480.avif",
+    "bytes": 104360,
+    "sha256": "9c33328fb6553f42d509ed584d1c3f2885c95e5ec1641cfc61db993667691d77"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/exterior-800.avif",
+    "bytes": 91581,
+    "sha256": "c787d688e44c1c8d25df80427bb993c1878a5da43f0fbcca5328102e525d3c33"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/exterior-800.webp",
+    "bytes": 119750,
+    "sha256": "05f251ded9e59155fd7a9dea72f37047efafc4e24f39e4fd9d666caa17d175b8"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/fachada-1200.avif",
+    "bytes": 458672,
+    "sha256": "742ab47be8905c8221972852faf72538167c7aaf47bd4868296b4e4104a50a9c"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/fachada-1200.webp",
+    "bytes": 639804,
+    "sha256": "4772fe998db0ccc13de89bf02f149855083b4fef40761dfa59ae751d2732184d"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/ladera-480.avif",
+    "bytes": 72000,
+    "sha256": "294afbbb38a6cb4d42c88a6881331e19c44dcfdb4a28b0f54efae0cb4a27eaf7"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/fachada-480.webp",
+    "bytes": 126320,
+    "sha256": "f33e15745af2d81e5eaa015fdb419a87431a1cad2bb1a40093671cad27bffac6"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/fachada-800.webp",
+    "bytes": 338186,
+    "sha256": "516d79e8f9bc25f6fcad9ef685c49d2a4a5e0c48168a063ded97e336fd6cfca4"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/fachada-800.avif",
+    "bytes": 269416,
+    "sha256": "5d75971175c4ce74daf5accb6b6f73f1b9a1a767c99b323ee97f28c1656fecba"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/ladera-1200.webp",
+    "bytes": 466504,
+    "sha256": "10f4c6276b6a5803f0fbf9aa58c599ae6bfa31400b3afd462919b25b4a951b77"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/ladera-1200.avif",
+    "bytes": 330276,
+    "sha256": "b22937dc270eaf1d324af365a923679d090efcb78be689fbe8a6a2f57e418c72"
+  },
+  {
+    "path": "src/.vercel/output/static/businesses-preview.json",
+    "bytes": 72,
+    "sha256": "9c5ba0b3eba2596d49696825fe755b4e62bd71c88a692ff19747d32bc12d7da2"
+  },
+  {
+    "path": "src/.vercel/output/static/eventos/de-programador-a-programador-c-2026-09-26-4b6ce534-0c95-443b-a5fc-fd877535efb8/index.html",
+    "bytes": 9424,
+    "sha256": "3d32df536756b2867a76b1b0ac0cfc08d767b572423dfdeec9ede32a35bfd4d3"
+  },
+  {
+    "path": "src/.vercel/output/static/colabora/index.html",
+    "bytes": 3591,
+    "sha256": "8e38c24366c2deded305d6ecc5b1d02ca6ff24e85e9a853f056fbd922d7a9d4c"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/ladera-800.webp",
+    "bytes": 237060,
+    "sha256": "a65fde12f3b69b98e2973887b44081615f4ac0c3370cbead7ec0febc38a974ad"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/ladera-480.webp",
+    "bytes": 88428,
+    "sha256": "14e3b61bd05117b8fa4881fbb0dfee117510deaf8171e65cf3027bbe70688596"
+  },
+  {
+    "path": "src/.vercel/output/static/business-demo-assets/rancho-mijangos/ladera-800.avif",
+    "bytes": 187850,
+    "sha256": "74b74fcab3ff7411deef1a91690b279987dcaca75baa7aee2127d26656a039aa"
+  },
+  {
+    "path": "src/.vercel/output/static/index.html",
+    "bytes": 3381,
+    "sha256": "1f1e63251249a4d8464ff1936f3f1a4227bcf7c3814941c072ad4c57dc3f7229"
+  },
+  {
+    "path": "src/.vercel/output/static/eventos/jose-y-el-toro-2026-09-26-1065608d-32cd-4289-82e1-d68aeb5130fe/index.html",
+    "bytes": 8867,
+    "sha256": "edd34a67d05ebb340deb52992ec2e32f2a91aac7c8d1c335052f13cf61401aa2"
+  },
+  {
+    "path": "src/.vercel/output/static/eventos/index.html",
+    "bytes": 5077,
+    "sha256": "f58e3bed0a41a2d6bee4d21831adb813d0d4bfbf9806e01662d195bbfcdffbc9"
+  },
+  {
+    "path": "src/.vercel/output/static/events-preview.json",
+    "bytes": 932,
+    "sha256": "7e9980e9a09d2dd900961bd10d7d844da51e36eb1c69f53570606c33cb51232e"
+  },
+  {
+    "path": "src/.vercel/output/static/events-build-manifest.json",
+    "bytes": 247,
+    "sha256": "f1b24fadaa1969a76db314164a7c6e3d836d1d5e7fa3712ed602ab7635c5a21c"
+  },
+  {
+    "path": "src/.vercel/output/static/eventos/no-disponible.html",
+    "bytes": 3596,
+    "sha256": "0d0c025207a4227334441b676718d9a2c40cb4aeee9afdd8cf5b4b7ee0597097"
+  },
+  {
+    "path": "src/.vercel/output/static/material-symbols-rounded.woff2",
+    "bytes": 3644,
+    "sha256": "00e8ba67559d4bf5f4e08e4d38fea3e3c2024580818143ed3c9723b2213a7a48"
+  },
+  {
+    "path": "src/.vercel/output/static/routes-filter.js",
+    "bytes": 816,
+    "sha256": "9d3cbe9544ca8b4063ca7d48f69073149c9528a7df54e1902705fbb8277811ff"
+  },
+  {
+    "path": "src/.vercel/output/static/qr-code.png",
+    "bytes": 8066,
+    "sha256": "66e15cad9a323b2b14391a4d5bde4a274ecb9f1d2c581c21271646624411845e"
+  },
+  {
+    "path": "src/.vercel/output/static/robots.txt",
+    "bytes": 68,
+    "sha256": "603351609e758bbd3cd3f44d9d1c41a334f6d9580b22445049316157c934e1c3"
+  },
+  {
+    "path": "src/.vercel/output/static/og-yuubus.png",
+    "bytes": 611770,
+    "sha256": "66b94a51810d7c76ebd869fd1d423500e4edd5e85e7546468fb0643f2da9c61e"
+  },
+  {
+    "path": "src/.vercel/output/static/negocios/rancho-mijangos-preview/index.html",
+    "bytes": 1517,
+    "sha256": "10a4093c338f225b2a7ff14683131223c829df6f5482acde6fef27e9b2354f38"
+  },
+  {
+    "path": "src/.vercel/output/static/routes-preview.json",
+    "bytes": 560,
+    "sha256": "3cfdb2f1066f101edbe424d22c9533361a0f6cebe4abc49776d14f6bdf9efda7"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/index.html",
+    "bytes": 19743,
+    "sha256": "b4e3f8f7edcda61e182229999cbe7d460c7dd6f8ee8b239e826973bd109873a6"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/ra-04/index.html",
+    "bytes": 32424,
+    "sha256": "5fcd7b22ed24de22823183d591bc2d1dbca10e6c0870274e39df3a6e592163df"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/ra-05/index.html",
+    "bytes": 42458,
+    "sha256": "700440912966f5a7ca5716b83943d4c48ca72878ba84ae1f8ed9378ae9efe0e2"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/ra-03/index.html",
+    "bytes": 27927,
+    "sha256": "a8de1c0d3b469d01e9a6d6a569e5e57fa9fae719dfb7ef77d21fe222edba92bc"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/ra-02/index.html",
+    "bytes": 39907,
+    "sha256": "08e05a45ebcdef20180b81c62f11cb2237edc79938365ab0a8c2016b17b2ae97"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/ra-06/index.html",
+    "bytes": 34022,
+    "sha256": "6eee14b6b15c32d04781369a11aeade9bdb60798dbc0328a28e704f8bb371c21"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/ra-07/index.html",
+    "bytes": 33126,
+    "sha256": "39327cc1a10e648f59a8842f707e0c91f70d085474a32943c9d2ac7c6370cf90"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/ra-10/index.html",
+    "bytes": 34803,
+    "sha256": "6bbf27dd2705621fc68f7d65487834fc06096f9bd1b65f8b52faded9ef8e490a"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/ra-11/index.html",
+    "bytes": 36868,
+    "sha256": "31b58df02894850d2e782f26613b16576579bc310b99649e898ca8274619f4b0"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/ra-12/index.html",
+    "bytes": 42789,
+    "sha256": "8a495a8b258c1859d8b6b967b680a49d4465b36c0911e8e54de337c25ee7db3a"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/ra-08/index.html",
+    "bytes": 40559,
+    "sha256": "893a005dbf79b1bdb1558ae85c15b318816396c09b2a7f95a9a3c4e49387deeb"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/ra-19/index.html",
+    "bytes": 45935,
+    "sha256": "788d25d14b9f003486ac7246494726ea0abaf219bd61efb5733da92bb4fddb97"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/ra-13/index.html",
+    "bytes": 30706,
+    "sha256": "5a9a8d588d7ac9a20de0b8a6b6e8bd241c6b07a3f7af8d776479e74724261eab"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rc-01/index.html",
+    "bytes": 42439,
+    "sha256": "f26b5af486b75be9ff968a5964b99585ca0b0b4154d9d55a994866d6395167aa"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rc-03/index.html",
+    "bytes": 57253,
+    "sha256": "e81b2303ba5f5d521e418ada8d3c63b866640de79df3da2b281dcf7b6a6f9042"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rc-04/index.html",
+    "bytes": 65009,
+    "sha256": "e3dff6af4ab9064831c09fdc70d2d72675928dbe5c5cd5f6888472be831c3a9c"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rc-02/index.html",
+    "bytes": 65381,
+    "sha256": "d108ed188e0c60cd6a1b6c842f60747fd57576199e04d7e6fd5cabb241dbd3b0"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rc-07/index.html",
+    "bytes": 21611,
+    "sha256": "c9713a0b383932994548cb7bb6ea8282083474b07b2e42f75ced870ae31fdef8"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rc-08/index.html",
+    "bytes": 53170,
+    "sha256": "d120c68db58c90dd0994a532557cc3cea33fd58b83adab3c45d640a6aa3a11da"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rc-05/index.html",
+    "bytes": 38489,
+    "sha256": "07c52895b024929e1b55a895a4b1d673fdf6600125efe7e30ec16910edf55c29"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rc-10/index.html",
+    "bytes": 55017,
+    "sha256": "835009b0daa9420eed0b4cc39e79a73cf160e0b3de333967371f495b49862308"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rc-06/index.html",
+    "bytes": 44936,
+    "sha256": "a4ae767ad83430b524dcdf3b4b3cc98ecb3733bc60431bbfb6319eb7548c87fc"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rc-09/index.html",
+    "bytes": 50004,
+    "sha256": "01de6ee6e908b7360432fe3ab621bd743796ecab0fdb53ebdd47a4e4becdf390"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rt-01/index.html",
+    "bytes": 17054,
+    "sha256": "6a1eb10e2107085e34ce9afbc66aebd323829cf3ac12dee19fb5a639c556a70b"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rc-11/index.html",
+    "bytes": 44647,
+    "sha256": "447927effb2c7fc362cb7f310c8169ddc4b1af6e56298d23d642180460cce0ca"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rc-13/index.html",
+    "bytes": 38710,
+    "sha256": "67451b5f33de01aa09b71b33b2d7726ace6501e47c8cd85fe79fdbdaa48e6d1c"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rc-14/index.html",
+    "bytes": 44202,
+    "sha256": "2f5a50c08ecb5f016e5e48b93828d9f2432c61bb330b664b6ba973321cb366ee"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rc-12/index.html",
+    "bytes": 32115,
+    "sha256": "757e19a43baa328492b8c867a3d5c620a1d8c18a8db5458788172de87cc75f07"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rc-15/index.html",
+    "bytes": 54288,
+    "sha256": "9a504369708e86e02bdb47d3d90b2ffc41cb2c56c13387cbcd87722fdaf140bb"
+  },
+  {
+    "path": "src/.vercel/output/static/sitemap.xml",
+    "bytes": 2573,
+    "sha256": "753f1632c693ca95719f353bb93e73f3b97a2b6cf8f9f968b6d467e453a508ca"
+  },
+  {
+    "path": "src/.vercel/output/static/yuubus-icon-192.png",
+    "bytes": 33712,
+    "sha256": "d91c21d0af45e1e7d00f7284d0ebd9fb1d747b3914fefa247d7b81a239c178e6"
+  },
+  {
+    "path": "src/.vercel/output/static/yuubus-icon.png",
+    "bytes": 390666,
+    "sha256": "99858a1ad21d46d0fcdd4ee44ef639364ce801c39df2111219c301ac6b2e9fb8"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rt-05/index.html",
+    "bytes": 62424,
+    "sha256": "7efdd0b96e2dc4d2aea5df41266c4cdabc50b3173e7a6151f127198c2ee1d87d"
+  },
+  {
+    "path": "src/.vercel/output/static/rutas/rt-02/index.html",
+    "bytes": 34061,
+    "sha256": "3a76f2c0e677f4157ca18a8d45df4858fc409cc2106e1fb1d8f34ca470dc5a82"
+  }
+]

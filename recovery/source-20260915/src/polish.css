@@ -1,0 +1,53 @@
+/* Production composition retained; only navigation, marketing images and commercial pages. */
+.nav-more summary, .nav-more-menu a { min-height: 44px; }
+.nav-more-menu { max-height: min(70vh, 480px); overflow-y: auto; overscroll-behavior: contain; }
+.nav-more:not([open]) > .nav-more-menu { display: none; }
+.nav .nav-link { min-height: 44px; }
+.showcase-controls { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); overflow: visible; }
+.showcase-control { font-size: 11px; color: #ded7f2; }
+.phone-screen { box-shadow: 0 16px 36px #08041b55; }
+.product-screenshot { display: block; }
+.product-screenshot img { display: block; max-width: 100%; }
+.how-screen { height: 420px; }
+.how-screen .product-screenshot { height: 100%; }
+.how-screen img { object-fit: contain; }
+.screenshot-unavailable { display: grid; place-content: center; min-height: 200px; padding: 20px; color: #352078; background: #f4f1e8; text-align: center; line-height: 1.6; }
+.contact-actions { align-items: center; }
+.contact-actions .contact-email { color: #352078; background: transparent; padding-inline: 4px; text-decoration: underline; text-underline-offset: 4px; font-size: 14px; }
+.contact-actions .contact-whatsapp { color: white; background: #23605b; border: 1px solid #23605b; line-height: 1.45; text-align: center; }
+.contact-actions .contact-whatsapp:hover { background: #194d48; }
+.business-preview .contact-actions { justify-content: flex-start; margin-top: 24px; }
+.business-preview .contact-actions a { margin-top: 0; }
+.footer-commercial { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 16px; border: 1px solid #9382bf; border-radius: 12px; color: #fff; text-decoration: none; margin-bottom: 12px; font-size: 14px; }
+.commercial-page .content-hero { padding-bottom: 48px; }
+.commercial-page .content-hero > p:not(.section-tag) { max-width: 680px; color: #56535e; font-size: 18px; line-height: 1.7; margin: 24px 0; }
+.commercial-page .contact-actions { justify-content: flex-start; margin-top: 26px; gap: 12px 24px; }
+.commercial-text-link { display: inline-flex; align-items: center; min-height: 44px; margin-top: 14px; color: #352078; text-underline-offset: 5px; font-size: 15px; font-weight: 650; }
+.commercial-benefits h2 { max-width: 650px; font-size: clamp(26px,3vw,36px); line-height: 1.2; }
+.commercial-benefit-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 32px; margin-top: 32px; }
+.commercial-benefit-grid article > span { color: #23605b; font-size: 13px; font-weight: 750; }
+.commercial-benefit-grid h3 { font-size: 20px; margin: 14px 0 10px; color: #352078; }
+.commercial-page p { line-height: 1.7; }
+.commercial-example { width: min(calc(100% - 48px),960px); margin: 64px auto; display: grid; grid-template-columns: minmax(0,1fr) 300px; gap: 60px; align-items: center; }
+.commercial-example h2 { color: #352078; font-size: clamp(30px,3vw,42px); line-height: 1.13; letter-spacing: -.035em; margin: 20px 0; }
+.commercial-example p:not(.section-tag) { color: #56535e; margin-top: 18px; }
+.commercial-example figure { margin: 0; min-width: 0; }
+.commercial-example .product-screenshot { border: 5px solid #24232b; border-radius: 30px; overflow: hidden; background: #fff; box-shadow: 0 12px 28px #35207813; }
+.commercial-example img { width: 100%; height: auto; }
+.commercial-example figcaption { font-size: 12px; line-height: 1.6; color: #56535e; margin-top: 14px; }
+.commercial-start { margin-top: 60px; margin-bottom: 80px; scroll-margin-top: 90px; }
+.commercial-start h2 { font-size: clamp(28px,3vw,38px); margin: 16px 0; }
+.commercial-start ol { padding-left: 22px; line-height: 1.7; color: #56535e; }
+.commercial-start li { padding: 8px 0 8px 4px; }
+.commercial-start strong { color: #24232b; }
+.commercial-page .content-action .contact-email { background: transparent; color: #352078; }
+.commercial-page .content-action .contact-whatsapp { background: #23605b; color: white; }
+.commercial-page .sponsor-card--naranja .sponsor-contact { background: #9c3d0b; }
+.commercial-page .sponsor-card--naranja .sponsor-card-header { color: #24232b; }
+.commercial-page .sponsor-card--naranja .sponsor-plan-chip { color: #24232b; }
+@media(max-width:720px) { .commercial-benefit-grid { grid-template-columns: 1fr; gap: 24px; }.commercial-example { grid-template-columns: 1fr; gap: 28px; }.commercial-example figure { width: 260px; max-width: 100%; margin: auto; }.commercial-page .content-hero > p:not(.section-tag){font-size:16px;} }
+@media(max-width:620px) { .how-screen { height: 420px; }.showcase-controls { grid-template-columns: repeat(2,minmax(0,1fr)); }.commercial-page .contact-actions { align-items: stretch; }.commercial-page .contact-actions a { justify-content: center; }.commercial-example { width: calc(100% - 36px); }.commercial-page .content-hero h1 { font-size: clamp(32px,9vw,40px); }.commercial-page .contact-actions > a { width: 100%; } }
+@media(prefers-reduced-motion:reduce) { .contact-actions a,.nav-more summary { transition: none; } }
+
+.commercial-page .sponsor-card--naranja .sponsor-billing { color: #24232b; }
+.commercial-page .sponsor-card--naranja .sponsor-includes,.commercial-page .sponsor-card--naranja .plan-inline-icon { color: #9c3d0b; }

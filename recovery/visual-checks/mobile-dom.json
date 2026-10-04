@@ -1,0 +1,1004 @@
+{
+  "production": {
+    "bodyWidth": 375,
+    "headings": [
+      "Muévete y descubre Oaxaca.",
+      "No solamente te mostramos qué existe en Oaxaca. También te mostramos cómo llegar.",
+      "Explora rutas",
+      "Explora Oaxaca.",
+      "Lo que quieres conocer.Cómo puedes llegar.",
+      "Descubre negocios que hacen Oaxaca.",
+      "Lugares que vale la pena conocer",
+      "Rancho Mijangos",
+      "Tu negocio también puede estar en YuuBus",
+      "Estamos sumando nuevos lugares.",
+      "Un plan para salir.Una ruta para llegar.",
+      "De programador a programador: C#",
+      "JOSÉ Y EL TORO",
+      "De tu destino a una ruta, en tres pasos.",
+      "Busca tu destino",
+      "Elige una opción",
+      "Conoce tu ruta",
+      "Lo necesario para moverte con más claridad.",
+      "Haz que más personas encuentren tu negocio.",
+      "Perfil",
+      "Ubicación",
+      "Contacto",
+      "Promociones",
+      "Descubrimiento",
+      "Cómo llegar",
+      "Tu siguiente ruta empieza aquí."
+    ],
+    "height": 844,
+    "links": [
+      {
+        "href": "#contenido",
+        "text": "Saltar al contenido"
+      },
+      {
+        "href": "#inicio",
+        "text": "Yuu Bus"
+      },
+      {
+        "href": "/rutas/",
+        "text": "Rutas"
+      },
+      {
+        "href": "/eventos/",
+        "text": "Eventos"
+      },
+      {
+        "href": "/anunciate/",
+        "text": "Anúnciate"
+      },
+      {
+        "href": "#oaxaca",
+        "text": "Explora"
+      },
+      {
+        "href": "/rutas/",
+        "text": "Rutas"
+      },
+      {
+        "href": "/anunciate/",
+        "text": "Anúnciate"
+      },
+      {
+        "href": "/#oaxaca",
+        "text": "Explora Oaxaca"
+      },
+      {
+        "href": "/#negocios",
+        "text": "Negocios locales"
+      },
+      {
+        "href": "/eventos/",
+        "text": "Eventos"
+      },
+      {
+        "href": "/colabora/",
+        "text": "Colabora"
+      },
+      {
+        "href": "/privacy/",
+        "text": "Aviso de Privacidad"
+      },
+      {
+        "href": "/terminos/",
+        "text": "Términos y Condiciones"
+      },
+      {
+        "href": "https://play.google.com/store/apps/details?id=mx.oaxaca.rutasoaxaca",
+        "text": "Descargar"
+      },
+      {
+        "href": "https://play.google.com/store/apps/details?id=mx.oaxaca.rutasoaxaca",
+        "text": "androidDisponible enGoogle Play"
+      },
+      {
+        "href": "#oaxaca",
+        "text": "routeExplora Oaxaca"
+      },
+      {
+        "href": "https://play.google.com/store/apps/details?id=mx.oaxaca.rutasoaxaca",
+        "text": ""
+      },
+      {
+        "href": "/rutas/rc-03/",
+        "text": "RC03BASE SAN FELIPE → BASE PLAZA DEL VALLE68 paradas registradas"
+      },
+      {
+        "href": "/rutas/ra-08/",
+        "text": "RA08AGENCIA DONAJÍ → COLONIA SATÉLITE72 paradas registradas"
+      },
+      {
+        "href": "/rutas/rt-01/",
+        "text": "RT01Yuroo Viguera → Yuroo Xoxocotlán72 paradas registradas"
+      },
+      {
+        "href": "/rutas/ra-02/",
+        "text": "RA02SANTA MARÍA ATZOMPA → GUADALUPE VICTORIA108 paradas registradas"
+      },
+      {
+        "href": "/rutas/",
+        "text": "Ver todas las rutasarrow_forward"
+      },
+      {
+        "href": "#negocios",
+        "text": "Negocios locales ↗"
+      },
+      {
+        "href": "/eventos/",
+        "text": "Agenda de eventos ↗"
+      },
+      {
+        "href": "#rutas",
+        "text": "Planea tu viaje ↗"
+      },
+      {
+        "href": "#catalogo-negocios",
+        "text": "Conoce el catálogo↓"
+      },
+      {
+        "href": "https://wa.me/529711462985?text=Hola%2C%20vi%20YuuBus%20y%20me%20interesa%20conocer%20las%20opciones%20para%20agregar%20o%20promocionar%20mi%20negocio.",
+        "text": "Quiero aparecer en YuuBus↗"
+      },
+      {
+        "href": "/negocios/rancho-mijangos-preview",
+        "text": "Conocer el lugar↗"
+      },
+      {
+        "href": "https://wa.me/529711462985?text=Hola%2C%20vi%20c%C3%B3mo%20aparecen%20los%20negocios%20en%20YuuBus%20y%20me%20interesa%20agregar%20o%20promocionar%20el%20m%C3%ADo.",
+        "text": "Quiero aparecer en YuuBus↗"
+      },
+      {
+        "href": "https://wa.me/529711462985?text=Hola%2C%20vi%20YuuBus%20y%20me%20interesa%20conocer%20las%20opciones%20para%20agregar%20o%20promocionar%20mi%20negocio.",
+        "text": "Quiero agregar mi negocio↗"
+      },
+      {
+        "href": "/eventos/de-programador-a-programador-c-2026-09-26-4b6ce534-0c95-443b-a5fc-fd877535efb8/",
+        "text": "26 de septiembreDe programador a programador: C#C. de Los Libres 800, Oaxaca de JuárezVer evento y cómo llegar →"
+      },
+      {
+        "href": "/eventos/jose-y-el-toro-2026-09-26-1065608d-32cd-4289-82e1-d68aeb5130fe/",
+        "text": "26 de septiembreJOSÉ Y EL TOROLa locomotora FOro EscénicoVer evento y cómo llegar →"
+      },
+      {
+        "href": "/eventos/",
+        "text": "Ver toda la agenda →"
+      },
+      {
+        "href": "https://wa.me/529711462985?text=Hola%2C%20vi%20YuuBus%20y%20me%20interesa%20conocer%20las%20opciones%20para%20agregar%20o%20promocionar%20mi%20negocio.",
+        "text": "Hablemos por WhatsApp ↗"
+      },
+      {
+        "href": "mailto:montealbancode@gmail.com?subject=Hola%2C%20vi%20YuuBus%20y%20me%20interesa%20conocer%20las%20opciones%20para%20agregar%20o%20promocionar%20mi%20negocio.&body=Hola%2C%20vi%20YuuBus%20y%20me%20interesa%20conocer%20las%20opciones%20para%20agregar%20o%20promocionar%20mi%20negocio.",
+        "text": "Prefiero escribir por correo ↗"
+      },
+      {
+        "href": "/anunciate/",
+        "text": "Conoce los planes↗"
+      },
+      {
+        "href": "https://play.google.com/store/apps/details?id=mx.oaxaca.rutasoaxaca",
+        "text": "androidDisponible enGoogle Play"
+      },
+      {
+        "href": "https://play.google.com/store/apps/details?id=mx.oaxaca.rutasoaxaca",
+        "text": "Escanea para descargar"
+      },
+      {
+        "href": "/rutas/",
+        "text": "Rutas"
+      },
+      {
+        "href": "/#oaxaca",
+        "text": "Explora Oaxaca"
+      },
+      {
+        "href": "/#negocios",
+        "text": "Negocios locales"
+      },
+      {
+        "href": "/anunciate/",
+        "text": "Anúnciate"
+      },
+      {
+        "href": "/eventos/",
+        "text": "Eventos"
+      },
+      {
+        "href": "/colabora/",
+        "text": "Colabora"
+      },
+      {
+        "href": "/privacy/",
+        "text": "Aviso de Privacidad"
+      },
+      {
+        "href": "/terminos/",
+        "text": "Términos y Condiciones"
+      },
+      {
+        "href": "https://wa.me/529711462985?text=Hola%2C%20vi%20YuuBus%20y%20me%20interesa%20conocer%20las%20opciones%20para%20agregar%20o%20promocionar%20mi%20negocio.",
+        "text": "Contacto comercial por WhatsApp ↗"
+      },
+      {
+        "href": "mailto:montealbancode@gmail.com",
+        "text": "montealbancode@gmail.com"
+      },
+      {
+        "href": "https://play.google.com/store/apps/details?id=mx.oaxaca.rutasoaxaca",
+        "text": "Descargar"
+      }
+    ],
+    "sections": [
+      {
+        "background": "rgba(248, 246, 252, 0.94)",
+        "class": "nav",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 63,
+        "id": "",
+        "tag": "NAV",
+        "width": 375,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "class": "nav-more-menu",
+        "color": "rgb(53, 32, 120)",
+        "font": "Inter, sans-serif",
+        "height": 0,
+        "id": "secondary-navigation-0",
+        "tag": "NAV",
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "hero",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 1246,
+        "id": "inicio",
+        "tag": "SECTION",
+        "width": 375,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "class": "problem-section",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 397,
+        "id": "",
+        "tag": "SECTION",
+        "width": 339,
+        "x": 18,
+        "y": 1457
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "routes-preview",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 1027,
+        "id": "",
+        "tag": "SECTION",
+        "width": 339,
+        "x": 18,
+        "y": 1886
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 126,
+        "id": "",
+        "tag": "HEADER",
+        "width": 339,
+        "x": 18,
+        "y": 1954
+      },
+      {
+        "background": "rgb(244, 241, 232)",
+        "class": "explore-oaxaca",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 1062,
+        "id": "oaxaca",
+        "tag": "SECTION",
+        "width": 343,
+        "x": 16,
+        "y": 2985
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "explore-heading",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 213,
+        "id": "",
+        "tag": "HEADER",
+        "width": 301,
+        "x": 37,
+        "y": 3012
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "explore-links",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 152,
+        "id": "",
+        "tag": "NAV",
+        "width": 301,
+        "x": 37,
+        "y": 3464
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "business-discovery business-v2",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 2602,
+        "id": "negocios",
+        "tag": "SECTION",
+        "width": 343,
+        "x": 16,
+        "y": 4111
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "business-editorial-copy",
+        "color": "rgb(244, 241, 232)",
+        "font": "Inter, sans-serif",
+        "height": 302,
+        "id": "",
+        "tag": "HEADER",
+        "width": 295,
+        "x": 40,
+        "y": 4141
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "business-example",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 1131,
+        "id": "ejemplo-negocio",
+        "tag": "SECTION",
+        "width": 343,
+        "x": 16,
+        "y": 5293
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "business-example-intro",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 211,
+        "id": "",
+        "tag": "HEADER",
+        "width": 343,
+        "x": 16,
+        "y": 5293
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "home-events section",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 1530,
+        "id": "",
+        "tag": "SECTION",
+        "width": 375,
+        "x": 0,
+        "y": 6777
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "section-heading",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 183,
+        "id": "",
+        "tag": "HEADER",
+        "width": 339,
+        "x": 18,
+        "y": 6849
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "how-section",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 1088,
+        "id": "rutas",
+        "tag": "SECTION",
+        "width": 375,
+        "x": 0,
+        "y": 8307
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "section-heading",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 229,
+        "id": "",
+        "tag": "HEADER",
+        "width": 339,
+        "x": 18,
+        "y": 8385
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "section",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 1052,
+        "id": "features",
+        "tag": "SECTION",
+        "width": 375,
+        "x": 0,
+        "y": 9395
+      },
+      {
+        "background": "rgb(53, 32, 120)",
+        "class": "business-owner-v2",
+        "color": "rgb(244, 241, 232)",
+        "font": "Inter, sans-serif",
+        "height": 1381,
+        "id": "para-negocios",
+        "tag": "SECTION",
+        "width": 343,
+        "x": 16,
+        "y": 10479
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "class": "final-cta",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 433,
+        "id": "",
+        "tag": "SECTION",
+        "width": 339,
+        "x": 18,
+        "y": 11925
+      },
+      {
+        "background": "rgb(26, 16, 63)",
+        "class": "",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 619,
+        "id": "",
+        "tag": "FOOTER",
+        "width": 375,
+        "x": 0,
+        "y": 12357
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "footer-links",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 148,
+        "id": "",
+        "tag": "NAV",
+        "width": 335,
+        "x": 20,
+        "y": 12578
+      }
+    ],
+    "width": 390
+  },
+  "preview": {
+    "bodyWidth": 375,
+    "headings": [
+      "Muévete y descubre Oaxaca.",
+      "No solamente te mostramos qué existe en Oaxaca. También te mostramos cómo llegar.",
+      "Explora rutas",
+      "Explora Oaxaca.",
+      "Lo que quieres conocer.Cómo puedes llegar.",
+      "Descubre negocios que hacen Oaxaca.",
+      "Lugares que vale la pena conocer",
+      "Rancho Mijangos",
+      "Tu negocio también puede estar en YuuBus",
+      "Estamos sumando nuevos lugares.",
+      "Un plan para salir.Una ruta para llegar.",
+      "De programador a programador: C#",
+      "JOSÉ Y EL TORO",
+      "De tu destino a una ruta, en tres pasos.",
+      "Busca tu destino",
+      "Elige una opción",
+      "Conoce tu ruta",
+      "Lo necesario para moverte con más claridad.",
+      "Haz que más personas encuentren tu negocio.",
+      "Perfil",
+      "Ubicación",
+      "Contacto",
+      "Promociones",
+      "Descubrimiento",
+      "Cómo llegar",
+      "Tu siguiente ruta empieza aquí."
+    ],
+    "height": 844,
+    "links": [
+      {
+        "href": "#contenido",
+        "text": "Saltar al contenido"
+      },
+      {
+        "href": "#inicio",
+        "text": "Yuu Bus"
+      },
+      {
+        "href": "/rutas/",
+        "text": "Rutas"
+      },
+      {
+        "href": "/eventos/",
+        "text": "Eventos"
+      },
+      {
+        "href": "/anunciate/",
+        "text": "Anúnciate"
+      },
+      {
+        "href": "#oaxaca",
+        "text": "Explora"
+      },
+      {
+        "href": "/rutas/",
+        "text": "Rutas"
+      },
+      {
+        "href": "/anunciate/",
+        "text": "Anúnciate"
+      },
+      {
+        "href": "/#oaxaca",
+        "text": "Explora Oaxaca"
+      },
+      {
+        "href": "/#negocios",
+        "text": "Negocios locales"
+      },
+      {
+        "href": "/eventos/",
+        "text": "Eventos"
+      },
+      {
+        "href": "/colabora/",
+        "text": "Colabora"
+      },
+      {
+        "href": "/privacy/",
+        "text": "Aviso de Privacidad"
+      },
+      {
+        "href": "/terminos/",
+        "text": "Términos y Condiciones"
+      },
+      {
+        "href": "https://play.google.com/store/apps/details?id=mx.oaxaca.rutasoaxaca",
+        "text": "Descargar"
+      },
+      {
+        "href": "https://play.google.com/store/apps/details?id=mx.oaxaca.rutasoaxaca",
+        "text": "androidDisponible enGoogle Play"
+      },
+      {
+        "href": "#oaxaca",
+        "text": "routeExplora Oaxaca"
+      },
+      {
+        "href": "https://play.google.com/store/apps/details?id=mx.oaxaca.rutasoaxaca",
+        "text": ""
+      },
+      {
+        "href": "/rutas/rc-03/",
+        "text": "RC03BASE SAN FELIPE → BASE PLAZA DEL VALLE68 paradas registradas"
+      },
+      {
+        "href": "/rutas/ra-08/",
+        "text": "RA08AGENCIA DONAJÍ → COLONIA SATÉLITE72 paradas registradas"
+      },
+      {
+        "href": "/rutas/rt-01/",
+        "text": "RT01Yuroo Viguera → Yuroo Xoxocotlán72 paradas registradas"
+      },
+      {
+        "href": "/rutas/ra-02/",
+        "text": "RA02SANTA MARÍA ATZOMPA → GUADALUPE VICTORIA108 paradas registradas"
+      },
+      {
+        "href": "/rutas/",
+        "text": "Ver todas las rutasarrow_forward"
+      },
+      {
+        "href": "#negocios",
+        "text": "Negocios locales ↗"
+      },
+      {
+        "href": "/eventos/",
+        "text": "Agenda de eventos ↗"
+      },
+      {
+        "href": "#rutas",
+        "text": "Planea tu viaje ↗"
+      },
+      {
+        "href": "#catalogo-negocios",
+        "text": "Conoce el catálogo↓"
+      },
+      {
+        "href": "https://wa.me/529711462985?text=Hola%2C%20vi%20YuuBus%20y%20me%20interesa%20conocer%20las%20opciones%20para%20agregar%20o%20promocionar%20mi%20negocio.",
+        "text": "Quiero aparecer en YuuBus↗"
+      },
+      {
+        "href": "/negocios/rancho-mijangos-preview",
+        "text": "Conocer el lugar↗"
+      },
+      {
+        "href": "https://wa.me/529711462985?text=Hola%2C%20vi%20c%C3%B3mo%20aparecen%20los%20negocios%20en%20YuuBus%20y%20me%20interesa%20agregar%20o%20promocionar%20el%20m%C3%ADo.",
+        "text": "Quiero aparecer en YuuBus↗"
+      },
+      {
+        "href": "https://wa.me/529711462985?text=Hola%2C%20vi%20YuuBus%20y%20me%20interesa%20conocer%20las%20opciones%20para%20agregar%20o%20promocionar%20mi%20negocio.",
+        "text": "Quiero agregar mi negocio↗"
+      },
+      {
+        "href": "/eventos/de-programador-a-programador-c-2026-09-26-4b6ce534-0c95-443b-a5fc-fd877535efb8/",
+        "text": "26 de septiembreDe programador a programador: C#C. de Los Libres 800, Oaxaca de JuárezVer evento y cómo llegar →"
+      },
+      {
+        "href": "/eventos/jose-y-el-toro-2026-09-26-1065608d-32cd-4289-82e1-d68aeb5130fe/",
+        "text": "26 de septiembreJOSÉ Y EL TOROLa locomotora FOro EscénicoVer evento y cómo llegar →"
+      },
+      {
+        "href": "/eventos/",
+        "text": "Ver toda la agenda →"
+      },
+      {
+        "href": "https://wa.me/529711462985?text=Hola%2C%20vi%20YuuBus%20y%20me%20interesa%20conocer%20las%20opciones%20para%20agregar%20o%20promocionar%20mi%20negocio.",
+        "text": "Hablemos por WhatsApp ↗"
+      },
+      {
+        "href": "mailto:montealbancode@gmail.com?subject=Hola%2C%20vi%20YuuBus%20y%20me%20interesa%20conocer%20las%20opciones%20para%20agregar%20o%20promocionar%20mi%20negocio.&body=Hola%2C%20vi%20YuuBus%20y%20me%20interesa%20conocer%20las%20opciones%20para%20agregar%20o%20promocionar%20mi%20negocio.",
+        "text": "Prefiero escribir por correo ↗"
+      },
+      {
+        "href": "/anunciate/",
+        "text": "Conoce los planes↗"
+      },
+      {
+        "href": "https://play.google.com/store/apps/details?id=mx.oaxaca.rutasoaxaca",
+        "text": "androidDisponible enGoogle Play"
+      },
+      {
+        "href": "https://play.google.com/store/apps/details?id=mx.oaxaca.rutasoaxaca",
+        "text": "Escanea para descargar"
+      },
+      {
+        "href": "/rutas/",
+        "text": "Rutas"
+      },
+      {
+        "href": "/#oaxaca",
+        "text": "Explora Oaxaca"
+      },
+      {
+        "href": "/#negocios",
+        "text": "Negocios locales"
+      },
+      {
+        "href": "/anunciate/",
+        "text": "Anúnciate"
+      },
+      {
+        "href": "/eventos/",
+        "text": "Eventos"
+      },
+      {
+        "href": "/colabora/",
+        "text": "Colabora"
+      },
+      {
+        "href": "/privacy/",
+        "text": "Aviso de Privacidad"
+      },
+      {
+        "href": "/terminos/",
+        "text": "Términos y Condiciones"
+      },
+      {
+        "href": "https://wa.me/529711462985?text=Hola%2C%20vi%20YuuBus%20y%20me%20interesa%20conocer%20las%20opciones%20para%20agregar%20o%20promocionar%20mi%20negocio.",
+        "text": "Contacto comercial por WhatsApp ↗"
+      },
+      {
+        "href": "mailto:montealbancode@gmail.com",
+        "text": "montealbancode@gmail.com"
+      },
+      {
+        "href": "https://play.google.com/store/apps/details?id=mx.oaxaca.rutasoaxaca",
+        "text": "Descargar"
+      }
+    ],
+    "sections": [
+      {
+        "background": "rgba(248, 246, 252, 0.94)",
+        "class": "nav",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 63,
+        "id": "",
+        "tag": "NAV",
+        "width": 375,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "class": "nav-more-menu",
+        "color": "rgb(53, 32, 120)",
+        "font": "Inter, sans-serif",
+        "height": 0,
+        "id": "secondary-navigation-0",
+        "tag": "NAV",
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "hero",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 1246,
+        "id": "inicio",
+        "tag": "SECTION",
+        "width": 375,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "class": "problem-section",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 397,
+        "id": "",
+        "tag": "SECTION",
+        "width": 339,
+        "x": 18,
+        "y": 1457
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "routes-preview",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 1027,
+        "id": "",
+        "tag": "SECTION",
+        "width": 339,
+        "x": 18,
+        "y": 1886
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 126,
+        "id": "",
+        "tag": "HEADER",
+        "width": 339,
+        "x": 18,
+        "y": 1954
+      },
+      {
+        "background": "rgb(244, 241, 232)",
+        "class": "explore-oaxaca",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 1062,
+        "id": "oaxaca",
+        "tag": "SECTION",
+        "width": 343,
+        "x": 16,
+        "y": 2985
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "explore-heading",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 213,
+        "id": "",
+        "tag": "HEADER",
+        "width": 301,
+        "x": 37,
+        "y": 3012
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "explore-links",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 152,
+        "id": "",
+        "tag": "NAV",
+        "width": 301,
+        "x": 37,
+        "y": 3464
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "business-discovery business-v2",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 2602,
+        "id": "negocios",
+        "tag": "SECTION",
+        "width": 343,
+        "x": 16,
+        "y": 4111
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "business-editorial-copy",
+        "color": "rgb(244, 241, 232)",
+        "font": "Inter, sans-serif",
+        "height": 302,
+        "id": "",
+        "tag": "HEADER",
+        "width": 295,
+        "x": 40,
+        "y": 4141
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "business-example",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 1131,
+        "id": "ejemplo-negocio",
+        "tag": "SECTION",
+        "width": 343,
+        "x": 16,
+        "y": 5293
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "business-example-intro",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 211,
+        "id": "",
+        "tag": "HEADER",
+        "width": 343,
+        "x": 16,
+        "y": 5293
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "home-events section",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 1530,
+        "id": "",
+        "tag": "SECTION",
+        "width": 375,
+        "x": 0,
+        "y": 6777
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "section-heading",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 183,
+        "id": "",
+        "tag": "HEADER",
+        "width": 339,
+        "x": 18,
+        "y": 6849
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "how-section",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 1088,
+        "id": "rutas",
+        "tag": "SECTION",
+        "width": 375,
+        "x": 0,
+        "y": 8307
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "section-heading",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 229,
+        "id": "",
+        "tag": "HEADER",
+        "width": 339,
+        "x": 18,
+        "y": 8385
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "section",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 1052,
+        "id": "features",
+        "tag": "SECTION",
+        "width": 375,
+        "x": 0,
+        "y": 9395
+      },
+      {
+        "background": "rgb(53, 32, 120)",
+        "class": "business-owner-v2",
+        "color": "rgb(244, 241, 232)",
+        "font": "Inter, sans-serif",
+        "height": 1381,
+        "id": "para-negocios",
+        "tag": "SECTION",
+        "width": 343,
+        "x": 16,
+        "y": 10479
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "class": "final-cta",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 433,
+        "id": "",
+        "tag": "SECTION",
+        "width": 339,
+        "x": 18,
+        "y": 11925
+      },
+      {
+        "background": "rgb(26, 16, 63)",
+        "class": "",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 619,
+        "id": "",
+        "tag": "FOOTER",
+        "width": 375,
+        "x": 0,
+        "y": 12357
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "footer-links",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 148,
+        "id": "",
+        "tag": "NAV",
+        "width": 335,
+        "x": 20,
+        "y": 12578
+      }
+    ],
+    "width": 390
+  }
+}

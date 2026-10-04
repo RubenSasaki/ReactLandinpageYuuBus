@@ -1,0 +1,14 @@
+{
+  "id": "dpl_56BGM1cy8kwWEUrDDMpwG5VpBjCA",
+  "name": "react-landinpage-yuu-bus",
+  "url": "react-landinpage-yuu-icev8al34-yuubus.vercel.app",
+  "createdAt": 1790280156485,
+  "ready": 1790280162609,
+  "target": "production",
+  "source": "cli",
+  "meta": {
+    "actor": "codex"
+  },
+  "projectId": "prj_y7XxNKdmQMSLxBzTOAEIWQ5axbcZ",
+  "framework": "vite"
+}

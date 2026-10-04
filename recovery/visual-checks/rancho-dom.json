@@ -1,0 +1,454 @@
+{
+  "production": {
+    "bodyWidth": 1425,
+    "headings": [
+      "Rancho Mijangos",
+      "Conoce el lugar",
+      "Dos opciones para conocer",
+      "Alpina A",
+      "Niebla",
+      "San José del Pacífico, Oaxaca",
+      "Tu negocio también puede estar en YuuBus"
+    ],
+    "height": 900,
+    "links": [
+      {
+        "href": "#contenido",
+        "text": "Saltar al contenido"
+      },
+      {
+        "href": "/",
+        "text": "Yuu Bus"
+      },
+      {
+        "href": "/rutas/",
+        "text": "Rutas"
+      },
+      {
+        "href": "/anunciate/",
+        "text": "Anúnciate"
+      },
+      {
+        "href": "/rutas/",
+        "text": "Rutas"
+      },
+      {
+        "href": "/anunciate/",
+        "text": "Anúnciate"
+      },
+      {
+        "href": "/#oaxaca",
+        "text": "Explora Oaxaca"
+      },
+      {
+        "href": "/#negocios",
+        "text": "Negocios locales"
+      },
+      {
+        "href": "/eventos/",
+        "text": "Eventos"
+      },
+      {
+        "href": "/colabora/",
+        "text": "Colabora"
+      },
+      {
+        "href": "/privacy/",
+        "text": "Aviso de Privacidad"
+      },
+      {
+        "href": "/terminos/",
+        "text": "Términos y Condiciones"
+      },
+      {
+        "href": "/",
+        "text": "Inicio"
+      },
+      {
+        "href": "/#negocios",
+        "text": "← Explora negocios"
+      },
+      {
+        "href": "https://wa.me/529711462985?text=Hola%2C%20vi%20c%C3%B3mo%20aparecen%20los%20negocios%20en%20YuuBus%20y%20me%20interesa%20agregar%20o%20promocionar%20el%20m%C3%ADo.",
+        "text": "Quiero aparecer en YuuBus↗"
+      },
+      {
+        "href": "/rutas/",
+        "text": "Rutas"
+      },
+      {
+        "href": "/#oaxaca",
+        "text": "Explora Oaxaca"
+      },
+      {
+        "href": "/#negocios",
+        "text": "Negocios locales"
+      },
+      {
+        "href": "/anunciate/",
+        "text": "Anúnciate"
+      },
+      {
+        "href": "/eventos/",
+        "text": "Eventos"
+      },
+      {
+        "href": "/colabora/",
+        "text": "Colabora"
+      },
+      {
+        "href": "/privacy/",
+        "text": "Aviso de Privacidad"
+      },
+      {
+        "href": "/terminos/",
+        "text": "Términos y Condiciones"
+      },
+      {
+        "href": "https://wa.me/529711462985?text=Hola%2C%20vi%20YuuBus%20y%20me%20interesa%20conocer%20las%20opciones%20para%20agregar%20o%20promocionar%20mi%20negocio.",
+        "text": "Contacto comercial por WhatsApp ↗"
+      },
+      {
+        "href": "mailto:montealbancode@gmail.com",
+        "text": "montealbancode@gmail.com"
+      }
+    ],
+    "sections": [
+      {
+        "background": "rgba(248, 246, 252, 0.98)",
+        "class": "page-header",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 73,
+        "id": "",
+        "tag": "HEADER",
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "page-header-links",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 44,
+        "id": "",
+        "tag": "NAV",
+        "width": 264,
+        "x": 1009,
+        "y": 14
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "class": "nav-more-menu",
+        "color": "rgb(53, 32, 120)",
+        "font": "Inter, sans-serif",
+        "height": 0,
+        "id": "secondary-navigation-0",
+        "tag": "NAV",
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "business-profile-heading",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 229,
+        "id": "",
+        "tag": "HEADER",
+        "width": 1200,
+        "x": 113,
+        "y": 109
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "business-profile-gallery",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 1090,
+        "id": "",
+        "tag": "SECTION",
+        "width": 1200,
+        "x": 113,
+        "y": 1334
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "business-profile-options",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 365,
+        "id": "",
+        "tag": "SECTION",
+        "width": 1200,
+        "x": 113,
+        "y": 2488
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "business-profile-location",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 173,
+        "id": "",
+        "tag": "SECTION",
+        "width": 1200,
+        "x": 113,
+        "y": 2900
+      },
+      {
+        "background": "rgb(26, 16, 63)",
+        "class": "",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 515,
+        "id": "",
+        "tag": "FOOTER",
+        "width": 1425,
+        "x": 0,
+        "y": 3368
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "footer-links",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 44,
+        "id": "",
+        "tag": "NAV",
+        "width": 1385,
+        "x": 20,
+        "y": 3588
+      }
+    ],
+    "width": 1440
+  },
+  "preview": {
+    "bodyWidth": 1425,
+    "headings": [
+      "Rancho Mijangos",
+      "Conoce el lugar",
+      "Dos opciones para conocer",
+      "Alpina A",
+      "Niebla",
+      "San José del Pacífico, Oaxaca",
+      "Tu negocio también puede estar en YuuBus"
+    ],
+    "height": 900,
+    "links": [
+      {
+        "href": "#contenido",
+        "text": "Saltar al contenido"
+      },
+      {
+        "href": "/",
+        "text": "Yuu Bus"
+      },
+      {
+        "href": "/rutas/",
+        "text": "Rutas"
+      },
+      {
+        "href": "/anunciate/",
+        "text": "Anúnciate"
+      },
+      {
+        "href": "/rutas/",
+        "text": "Rutas"
+      },
+      {
+        "href": "/anunciate/",
+        "text": "Anúnciate"
+      },
+      {
+        "href": "/#oaxaca",
+        "text": "Explora Oaxaca"
+      },
+      {
+        "href": "/#negocios",
+        "text": "Negocios locales"
+      },
+      {
+        "href": "/eventos/",
+        "text": "Eventos"
+      },
+      {
+        "href": "/colabora/",
+        "text": "Colabora"
+      },
+      {
+        "href": "/privacy/",
+        "text": "Aviso de Privacidad"
+      },
+      {
+        "href": "/terminos/",
+        "text": "Términos y Condiciones"
+      },
+      {
+        "href": "/",
+        "text": "Inicio"
+      },
+      {
+        "href": "/#negocios",
+        "text": "← Explora negocios"
+      },
+      {
+        "href": "https://wa.me/529711462985?text=Hola%2C%20vi%20c%C3%B3mo%20aparecen%20los%20negocios%20en%20YuuBus%20y%20me%20interesa%20agregar%20o%20promocionar%20el%20m%C3%ADo.",
+        "text": "Quiero aparecer en YuuBus↗"
+      },
+      {
+        "href": "/rutas/",
+        "text": "Rutas"
+      },
+      {
+        "href": "/#oaxaca",
+        "text": "Explora Oaxaca"
+      },
+      {
+        "href": "/#negocios",
+        "text": "Negocios locales"
+      },
+      {
+        "href": "/anunciate/",
+        "text": "Anúnciate"
+      },
+      {
+        "href": "/eventos/",
+        "text": "Eventos"
+      },
+      {
+        "href": "/colabora/",
+        "text": "Colabora"
+      },
+      {
+        "href": "/privacy/",
+        "text": "Aviso de Privacidad"
+      },
+      {
+        "href": "/terminos/",
+        "text": "Términos y Condiciones"
+      },
+      {
+        "href": "https://wa.me/529711462985?text=Hola%2C%20vi%20YuuBus%20y%20me%20interesa%20conocer%20las%20opciones%20para%20agregar%20o%20promocionar%20mi%20negocio.",
+        "text": "Contacto comercial por WhatsApp ↗"
+      },
+      {
+        "href": "mailto:montealbancode@gmail.com",
+        "text": "montealbancode@gmail.com"
+      }
+    ],
+    "sections": [
+      {
+        "background": "rgba(248, 246, 252, 0.98)",
+        "class": "page-header",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 73,
+        "id": "",
+        "tag": "HEADER",
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "page-header-links",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 44,
+        "id": "",
+        "tag": "NAV",
+        "width": 264,
+        "x": 1009,
+        "y": 14
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "class": "nav-more-menu",
+        "color": "rgb(53, 32, 120)",
+        "font": "Inter, sans-serif",
+        "height": 0,
+        "id": "secondary-navigation-0",
+        "tag": "NAV",
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "business-profile-heading",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 229,
+        "id": "",
+        "tag": "HEADER",
+        "width": 1200,
+        "x": 113,
+        "y": 109
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "business-profile-gallery",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 1090,
+        "id": "",
+        "tag": "SECTION",
+        "width": 1200,
+        "x": 113,
+        "y": 1334
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "business-profile-options",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 365,
+        "id": "",
+        "tag": "SECTION",
+        "width": 1200,
+        "x": 113,
+        "y": 2488
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "business-profile-location",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 173,
+        "id": "",
+        "tag": "SECTION",
+        "width": 1200,
+        "x": 113,
+        "y": 2900
+      },
+      {
+        "background": "rgb(26, 16, 63)",
+        "class": "",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 515,
+        "id": "",
+        "tag": "FOOTER",
+        "width": 1425,
+        "x": 0,
+        "y": 3368
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "class": "footer-links",
+        "color": "rgb(36, 35, 43)",
+        "font": "Inter, sans-serif",
+        "height": 44,
+        "id": "",
+        "tag": "NAV",
+        "width": 1385,
+        "x": 20,
+        "y": 3588
+      }
+    ],
+    "width": 1440
+  }
+}

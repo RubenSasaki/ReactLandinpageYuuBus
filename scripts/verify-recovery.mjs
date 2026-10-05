@@ -2,6 +2,7 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import assert from 'node:assert/strict'
 import crypto from 'node:crypto'
+import {dynamicConfig} from '../server/routing.mjs'
 const manifest=JSON.parse(await fs.readFile('dist/.vite/manifest.json','utf8'))
 const entry=manifest['index.html']
 assert(entry?.file&&entry.css?.length===1)
@@ -20,7 +21,7 @@ for(const row of inventory){
   assert.equal(built.toString(),expected,`Static content changed: ${rel}`);rewritten++
  }else{assert.deepEqual(built,original,`Production asset changed: ${rel}`);exact++}
 }
-assert.deepEqual(JSON.parse(await fs.readFile('.vercel/output/config.json','utf8')),JSON.parse(await fs.readFile('recovery/production-output-config.json','utf8')))
+assert.deepEqual(JSON.parse(await fs.readFile('.vercel/output/config.json','utf8')),dynamicConfig(JSON.parse(await fs.readFile('recovery/production-output-config.json','utf8'))))
 const code=await fs.readFile('src/recovered/landing.js','utf8')
 for(const marker of ['Rancho Mijangos','529711462985','Estamos sumando nuevos lugares'])assert(code.includes(marker),`Missing ${marker}`)
-console.log(`PASS: ${exact} byte-identical assets/data files; ${rewritten} static pages differ only in rebuilt app references; routing configuration unchanged.`)
+console.log(`PASS: ${exact} byte-identical assets/data files; ${rewritten} archived static pages differ only in rebuilt app references; only routes/events endpoints overridden.`)

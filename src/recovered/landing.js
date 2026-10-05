@@ -1421,17 +1421,18 @@ function Oe(e) {
 }
 function HomeEventsPreview() {
   let [e, t] = (0, u.useState)([]);
+  let [status, setStatus] = (0, u.useState)(`loading`);
   return (
     (0, u.useEffect)(() => {
       let e = new AbortController(),
-        n = window.setTimeout(() => e.abort(), 6e3);
+        n = window.setTimeout(() => e.abort(), 15e3);
       return (
         fetch(`/events-preview.json`, {
           signal: e.signal,
         })
           .then(readBoundedJson)
-          .then((e) => t(Oe(e)))
-          .catch(() => {})
+          .then((e) => { t(Oe(e)); setStatus(`ready`); })
+          .catch(() => { setStatus(`error`); })
           .finally(() => window.clearTimeout(n)),
         () => {
           (e.abort(), window.clearTimeout(n));
@@ -1513,6 +1514,7 @@ function HomeEventsPreview() {
             ),
           ),
         }),
+        e.length === 0 ? (0, T.jsx)(`p`, {role: `status`, children: status === `loading` ? `Cargando agenda…` : status === `error` ? `No pudimos cargar la agenda. Intenta nuevamente en unos minutos.` : `No hay eventos publicados disponibles. Vuelve pronto o consulta las rutas de Oaxaca.`}) : null,
         (0, T.jsx)(`a`, {
           className: `event-secondary`,
           href: `/eventos/`,
@@ -2955,21 +2957,19 @@ function ProblemSection() {
     ],
   });
 }
-var routeStats = {
-    routes: 30,
-    stops: 2521,
-  },
-  st = [
-    {
-      value: routeStats.routes.toLocaleString(`es-MX`),
-      label: `Rutas disponibles`,
-    },
-    {
-      value: routeStats.stops.toLocaleString(`es-MX`),
-      label: `Paradas registradas`,
-    },
-  ];
 function Stats() {
+  let [counts, setCounts] = (0, u.useState)(null);
+  (0, u.useEffect)(() => {
+    const controller = new AbortController();
+    fetch('/route-stats.json', {signal: controller.signal})
+      .then(response => { if (!response.ok) throw Error('Routes unavailable'); return response.json(); })
+      .then(setCounts).catch(() => {});
+    return () => controller.abort();
+  }, []);
+  const st = [
+    {value: counts ? counts.routes.toLocaleString('es-MX') : '—', label: 'Rutas disponibles'},
+    {value: counts ? counts.stops.toLocaleString('es-MX') : '—', label: 'Paradas registradas'},
+  ];
   return (0, T.jsxs)(`div`, {
     className: `stats`,
     "aria-label": `Cobertura actual de Yuu Bus`,

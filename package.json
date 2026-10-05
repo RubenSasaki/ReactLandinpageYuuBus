@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/preserve-static-pages.mjs",
+    "build": "vite build && node scripts/preserve-static-pages.mjs && node scripts/build-catalog.mjs",
     "preview": "vite preview",
-    "verify": "node scripts/verify-recovery.mjs"
+    "verify": "node scripts/verify-recovery.mjs && node --test tests/catalog.test.mjs"
   },
   "devDependencies": {
     "vite": "8.2.1"

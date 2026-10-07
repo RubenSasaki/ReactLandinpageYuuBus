@@ -48,9 +48,8 @@ export async function loadRoutes(read = readJson) {
     entryIsVisible(entry, new Date()); // Validate visibility bounds even when not currently visible.
     return {...entry, color: publishedRouteColor(entry.id, entry.color)};
   });
-  // Explicit scope restriction: RA18 must not be added by this landing change.
-  // Load other active routes including future windows, then reevaluate visibility on every request.
-  return mapWithConcurrency(entries.filter(e => e.activa && e.id !== 'RA18'), 6, async entry => ({
+  // Load active routes including future windows, then reevaluate visibility on every request.
+  return mapWithConcurrency(entries.filter(e => e.activa), 6, async entry => ({
     entry, route: validateRouteDocument(await read(ROUTES_BASE + entry.id + '.json'), entry),
   }));
 }

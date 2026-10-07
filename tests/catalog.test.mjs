@@ -18,12 +18,12 @@ const request = async (handler,path,method='GET') => {
   await handler({url:path,method},{set statusCode(v){result.status=v;},setHeader(k,v){result.headers[k]=v;},end(body){result.body=body;}});
   return result;
 };
-test('live-source adapter incorporates new routes without a build, excludes RA18 and hidden routes',async()=>{
+test('live-source adapter includes active RA18 and new routes without a build, excludes hidden routes',async()=>{
   let entries=[entry('RA02'),entry('RA18'),entry('RA03',{activa:false})];
   const read=async url=>url.endsWith('indice.json')?{rutas:entries}:doc(url.split('/').pop().replace('.json',''));
-  assert.deepEqual(visibleRoutes(await loadRoutes(read)).map(r=>r.id),['RA02']);
+  assert.deepEqual(visibleRoutes(await loadRoutes(read)).map(r=>r.id),['RA02','RA18']);
   entries.push(entry('RA99'));
-  assert.deepEqual(visibleRoutes(await loadRoutes(read)).map(r=>r.id),['RA02','RA99']);
+  assert.deepEqual(visibleRoutes(await loadRoutes(read)).map(r=>r.id),['RA02','RA18','RA99']);
   entries.push(entry('RA99')); await assert.rejects(loadRoutes(read),/duplicate/);
 });
 test('temporal route visibility is reevaluated inside warm cache',async()=>{
@@ -57,12 +57,13 @@ test('RPC adapter uses public config, POST contract and rejects guessed or secre
   await assert.rejects(loadEvents(async()=>[event({finEn:null})],env),/instants/);
 });
 test('request renderer handles detail, filtering hooks, missing data and upstream errors honestly',async()=>{
-  const rows=await loadRoutes(async url=>url.endsWith('indice.json')?{rutas:[entry('RA02')]}:doc('RA02'));
+  const rows=await loadRoutes(async url=>url.endsWith('indice.json')?{rutas:[entry('RA02'),entry('RA18')]}:doc(url.split('/').pop().replace('.json','')));
   const snapshot=value=>async()=>({value,fetchedAt:now.getTime(),stale:false});
   const handler=createHandler(assets,{routes:snapshot(rows),events:snapshot(normalizeEvents([event({tituloES:'<script>test</script>'})])),clock:()=>now});
   const listing=await request(handler,'/rutas/');assert.equal(listing.status,200);assert.match(listing.body,/id="route-search"/);assert.match(listing.body,/routes-filter.js/);
   const detail=await request(handler,'/api/catalog?catalogPath=rutas/ra-02/');assert.match(detail.body,/data-route-map-data/);
-  assert.equal((await request(handler,'/rutas/ra-18/')).status,404);
+  assert.equal((await request(handler,'/rutas/ra-18/')).status,200);
+  assert.equal((await request(handler,'/rutas/ra-99/')).status,404);
   const agenda=await request(handler,'/eventos/');assert.match(agenda.body,/&lt;script&gt;/);assert.doesNotMatch(agenda.body,/<script>test/);
   const eventSlug=normalizeEvents([event({tituloES:'<script>test</script>'})])[0].slug;
   const eventDetail=await request(handler,'/eventos/'+eventSlug+'/');
